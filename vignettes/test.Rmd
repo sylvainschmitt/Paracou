@@ -1,0 +1,70 @@
+---
+title: "test"
+author: "Sylvain Schmitt"
+date: "October 12, 2016"
+output: html_document
+---
+
+```{r config, message=FALSE, warning=FALSE, include=FALSE}
+library(knitr)
+library(parallel)
+cores <- detectCores() - 1
+library(Paracou)
+opts_chunk$set(
+  echo = F, message = F, warning = F, fig.height = 8, fig.width = 8,
+  cache = T, cache.lazy = F)
+```
+
+```{r tree opening}
+tree <- data.table::fread('./inst/extdata/paracou_p1_15.csv', data.table = F)
+
+# Extracting interest data
+tree <- tree[-which(tree$code_vivant == 'FAUX'),]
+tree <- tree[c('n_parcelle', 'i_arbre', 'nomPilote', 'campagne', 'Genre', 'espece')]
+names(tree) <- c('plot', 'id', 'vern', 'census', 'genus', 'species')
+
+# Treatment
+tree$treatment <- NA
+tree$treatment[which(tree$plot %in% c(1, 6, 11))] <- 0 # Unlogged
+tree$treatment[which(tree$plot %in% c(2, 7, 9))] <- 1 # T1
+tree$treatment[which(tree$plot %in% c(3, 5, 10))] <- 2 # T2
+tree$treatment[which(tree$plot %in% c(4, 8, 12))] <- 3 # T3
+```
+
+```{r bd}
+# bd <- bd_table(tree) # Long step => saved cobject
+# save(bd, file = "~/Documents/BIOGET/Projet/Paracou/inst/extdata/bd.Rdata")
+load("~/Documents/BIOGET/Projet/Paracou/inst/extdata/bd.Rdata")
+```
+
+```{r diversity}
+years <- unique(tree$census)[order(unique(tree$census))][-1]
+alphaUL <- sapply(years, function(y){
+  bd_y <- bd
+  bd_y$com <- com(tree, bd_y, y, 1987)
+  if(length(which(is.na(bd_y$com))) > 0){
+    bd_y <- bd_y[-which(is.na(bd_y$com)),] 
+  }
+  UL <- subset(bd_y, treatment == 0)
+  UL.df <- table(UL$SpCode, UL$com)
+  UL.df[UL.df > 0] <- 1
+  return(colSums(UL.df))
+})
+
+alphaUL <- data.frame(data.table::rbindlist(lapply(alphaUL, function(x){
+  data.frame(t(x))
+}), fill = T))
+row.names(alphaUL) <- years
+alphaUL[is.na(alphaUL)] <- 0
+```
+
+```{r plot}
+plot(alphaUL$OS ~ row.names(alphaUL), pch = '', ylab = '', xlab = 'year', main = 'Alpha diversity unlogged', ylim = c(0,400))
+lines(alphaUL$NR ~ row.names(alphaUL), col = 'green')
+lines(alphaUL$NS ~ row.names(alphaUL), col = 'lightblue')
+lines(alphaUL$OS ~ row.names(alphaUL), col = 'darkblue')
+lines(alphaUL$DR ~ row.names(alphaUL), col = 'red')
+lines(alphaUL$DS ~ row.names(alphaUL), col = 'firebrick')
+mtext('See sommunity scheme for colours')
+```
+

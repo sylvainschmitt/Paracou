@@ -1,0 +1,11 @@
+Package: Paracou
+Type: Package
+Title: Paracou data set analysis
+Version: 0.1.9001
+Author: Sylvain Schmitt, Morgan Job Knoester
+Maintainer: Sylvain Schmitt <sylvain.schmitt@agroparistech.fr>
+Description: Paracou data set analysis, mainly for master 2 project on
+    biodiversity indices.
+License: GPL3
+LazyData: TRUE
+RoxygenNote: 5.0.1
