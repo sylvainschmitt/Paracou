@@ -10,18 +10,16 @@
 com <- function(tree, bd, y, l){
 
   com <- apply(bd, 1, function(v){
-    b <- v[1]
-    d <- v[2]
+    b <- v[9]
+    d <- v[7]
     if(is.na(d)){
       d <- Inf
     }
 
-    if(y > b & y >= d & d <= l){com <- 'DS'}
-    if(y > b & y >= d & d > l){com <- 'DR'}
-    if(y > b & y < d & b <= l){com <- 'OS'}
-    if(y > b & y < d & b > l){com <- 'NS'}
-    if(y == b & b > l){com <- 'NR'}
-    if(y == b & b <= l){com <- 'OS'}
+    if(y >= b & b > l & y >= d){com <- 'DR'}
+    if(y >= b & b > l & y < d){com <- 'AR'}
+    if(y >= b & b <= l & y >= d){com <- 'DS'}
+    if(y >= b & b <= l & y < d){com <- 'AS'}
     if(y < b){com <- NA}
 
     return(com)
