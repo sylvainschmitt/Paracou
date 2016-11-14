@@ -1,0 +1,190 @@
+---
+title: "Badass title like beta diversity change with logging !"
+author: "Morgan Knoester & Sylvain Schmitt"
+date: "October 12, 2016"
+output: pdf_document
+csl: mee.csl
+bibliography: refs.bib
+---
+
+# Abstract
+
+## Keywords
+
+# Introduction
+
+- Selective logging
+    - What is selective logging
+    - Increased used in tropical forest
+- Sylviculture impact diversity *Gibson et al, 2011*
+    - What’s the impact of selective logging
+    - What’s the impact of complementary silvicultural practices
+- Long term study
+    - Selective logging clear short term impact
+    - What about the long term impact
+    - Evolution in time
+- Succession
+    - Evolution in time
+    - Temporary stages corresponding to floristic groups (Pioneers or others)
+    - Increase of diversity
+    - Toward a climax / equilibrium / stable turn over
+- Article questions:
+    - Turn over unlogged ? DS # AR
+    - Logged plot toward origin ? AR # AS + DS
+    - Temporary stages of floristic groups? DR # AR
+- What we've done:
+    - Design communities from individuals groups to answer to the three previous questions
+    - Used beta-diversity indices to compare those communities
+
+# Material and methods
+
+## Study site
+
+## Taxonomic composition
+
+## Analysis
+
+### Time sampling
+
+Since the logging of Paracou plots in 1987, all trees above 10 cm gbh were followed until today, especially in treatment 3 and unlogged plots. New recruitments were also registrated at the exception of years 1996, 1998, 2000, 2002, 2004 and 2006. For subsequent analysis we replace those years informations in term of rectuitments by their previous year in order to get correct turn-over measurements.
+
+### Community design
+
+In both treatment 3 and unlogged plots, we defined 4 communities **(guilds?)** inside each plots. First we decided to split survivors, being trees present before the logging, from recrutiements, being trees recruited after the logging. Second inside those two groups we separated alive from dead trees. We thus obtain 4 groups: Alive Recruitments (AR), Alive Survivors (AS), Dead Recruitments (DR), and Dead Survivors (DS); as described in the figure~1.
+
+**[Include draw.io figure for communities]**
+
+**Figure 1:** Community design. *Plots trees were separated in four communities being Alive Recruitments (AR), Alive Survivors (AS), Dead Recruitments (DR), and Dead Survivors (DS).*
+
+### Diversity indices
+
+We used beta-diversity indices to look at the evolution of diversity between communities of interest inside plots. Beta-diversity was measured with reduced-bias beta diversity of order 1, corresponding to Shannon diversity, with Tsallis generalized entropy formula. 
+
+First we used beta-diversity between alive recruitments and dead survivors in unlogged plots to characterized the natural turn-over present in Paracou. Dead survivors represents the floristic composition before the logging year wheareas alive recrutiments inform which floristic composition is now selected by the ecosystem in unlogged plots. Consequently ecosystem at climax should have null beta-diversity whereas eosystem with a natural turn-over will have a positive beta-diversity even at equilibrium.
+
+Secondly, we used beta-diversity between alive recruitments and survivors (dead and alive) in logged plots to look for a come back of logged plots diversity toward origin. If the logged ecosystem is returning to original floristic compostion, beta-diversity between new species selected by the ecosystem represented by alive recruitments and original floristic compostion represented by all survivors should be decreasing in time toward 0.
+
+Finally, beta-diversity between dead recruitments and alive recruitments from logged plots was used to identify succession stages in floristic composition. Effectively, differences of floristic composition between alive and dead recruitments, i.e. species selected by the ecosystem after the logging, will show which new species are selected regarding the previously selected bew species inside recruitments during time. Succession theory **[cite]** hypothesis different floristic groups succeding toward the come back of the ecosystem to equilbrium. Following this hypothesis beta-diversity between dead recruitments and alive recruitments should show plateau indicating constant increase of new species corresponding of arrival from new floristic groups and decreas corresponding to the stable stage of the current floristic group.
+
+All analyses were conducted using the R 3.3.0  software environment [@r_core_team_r:_2016] with entropart package [@entropart].
+
+# Results
+
+```{r config, message=FALSE, warning=FALSE, include=FALSE}
+rm(list = ls()) ; invisible(gc())
+library(knitr)
+library(parallel)
+cores <- detectCores() - 1
+library(Paracou)
+opts_chunk$set( echo = F, message = F, warning = F, include = F, fig.height = 8, fig.width = 8, cache = T, cache.lazy = F)
+```
+
+```{r tree opening}
+tree <- data.table::fread('~/Documents/BIOGET/Projet/Paracou/inst/extdata/paracou_p1_15.csv', data.table = F)
+
+# Extracting interest data
+tree <- tree[c('n_parcelle', 'i_arbre', 'nomPilote', 'campagne', 'Genre', 'espece', 'code_vivant')]
+names(tree) <- c('plot', 'id', 'vern', 'census', 'genus', 'species', 'alive')
+
+# Treatment
+tree$treatment <- NA
+tree$treatment[which(tree$plot %in% c(1, 6, 11))] <- 0 # Unlogged
+tree$treatment[which(tree$plot %in% c(2, 7, 9))] <- 1 # T1
+tree$treatment[which(tree$plot %in% c(3, 5, 10))] <- 2 # T2
+tree$treatment[which(tree$plot %in% c(4, 8, 12))] <- 3 # T3
+```
+
+```{r bd Job}
+bd <- tree[which(!duplicated(tree$id)), c('id', 'treatment', 'plot', 'vern', 'genus', 'species')]
+bd <- merge(bd, tree[which(tree$alive == 'FAUX'), c('id', 'census')], all.x = T)
+names(bd)[7] <- 'death'
+# Missing years
+bad_years <- c(1996, 1998, 2000, 2002, 2004, 2006)
+age <- table(tree[-which(tree$alive == 'FAUX'),'id'], tree[-which(tree$alive == 'FAUX'),'census'])
+age <- as.data.frame.matrix(age) 
+age[as.character(bad_years)] <- age[as.character(bad_years - 1)]
+age <- rowSums(age) - 1
+age <- data.frame(id = names(age), age = age)
+bd <- merge(bd, age)
+sel <- which(is.na(bd$death))
+bd$birth <- NA 
+bd$birth[-sel] <- bd$death[-sel] - bd$age[-sel]
+bd$birth[sel] <- 2015 - bd$age[sel]
+bd <- bd[which(!duplicated(bd$id)),]
+row.names(bd) <- bd$id
+```
+
+```{r diversity}
+library(entropart)
+years <- c(1988:2015)
+diversity <- sapply(years, function(y){
+  
+  # Attributing communities
+  bd_y <- bd
+  bd_y$com <- com(tree, bd_y, y, 1987)
+  if(length(which(is.na(bd_y$com))) > 0){
+    bd_y <- bd_y[-which(is.na(bd_y$com)),] 
+  }
+  
+  # Building lists of treatment and repetition
+  Coms <- list(L = subset(bd_y, treatment == 0), 
+               UL = subset(bd_y, treatment == 3))
+  Coms$L <- list(P1 = subset(Coms$L, plot == 1),
+                 P6 = subset(Coms$L, plot == 6),
+                 P11 = subset(Coms$L, plot == 11))
+  Coms$UL <- list(P4 = subset(Coms$UL, plot == 4),
+                  P8 = subset(Coms$UL, plot == 8),
+                  P12 = subset(Coms$UL, plot == 12))
+  
+  # Extracting searched beta-diversities
+  ## UL.DS.AR
+  UL.df <- lapply(Coms$UL, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  UL.mc <- lapply(UL.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
+  UL.DS.AR <- lapply(UL.mc, function(x){BetaDiversity(x)$Total})
+  ## L.AR.S
+  L.df <- lapply(Coms$L, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  L.df <- lapply(L.df, function(x){x$S <- x$AS + x$DS ; return(x)})
+  L.mc <- lapply(L.df, function(x) {MetaCommunity(x[c('AR', 'S')])})
+  L.AR.S <- lapply(L.mc, function(x){BetaDiversity(x)$Total})
+  ## L.DR.AR
+  L.mc <- lapply(L.df, function(x) {invisible(try(MetaCommunity(x[c('DR', 'AR')])))}) # ! TRY ! In 88 and 89 no DR in P11
+  L.DR.AR <- lapply(L.mc, function(x){invisible(try(BetaDiversity(x)$Total))})
+  
+  return(list(
+    UL.DS.AR = UL.DS.AR,
+    L.AR.S = L.AR.S,
+    L.DR.AR = L.DR.AR
+  ))
+}, simplify = F)
+
+names(diversity) <- years
+diversity <- lapply(diversity, `[`, names(diversity[[1]]))
+diversity <- apply(do.call(rbind, diversity), 2, as.list)
+diversity <- lapply(diversity, function(x){do.call('rbind', lapply(x, rbind))})
+diversity <- lapply(diversity, function(x){row.names(x) <- years ; return(x)})
+diversity <- lapply(diversity, data.frame) # ! Try error for L.DR.AR #
+```
+
+```{r plot, include=TRUE}
+plot(as.numeric(diversity$UL.DS.AR$P12) ~ years, xlab = 'year', ylab = 'Beta-diversity Shannon', pch = ' ', ylim = c(1,3))
+lines(as.numeric(diversity$UL.DS.AR$P4) ~ years, col = 'red', lty = 1, lwd = 2)
+lines(as.numeric(diversity$UL.DS.AR$P8) ~ years, col = 'blue', lty = 1, lwd = 2)
+lines(as.numeric(diversity$UL.DS.AR$P12) ~ years, col = 'green', lty = 1, lwd = 2)
+lines(as.numeric(diversity$L.AR.S$P1) ~ years, col = 'red', lty = 2, lwd = 2)
+lines(as.numeric(diversity$L.AR.S$P6) ~ years, col = 'blue', lty = 2, lwd = 2)
+lines(as.numeric(diversity$L.AR.S$P11) ~ years, col = 'green', lty = 2, lwd = 2)
+lines(as.numeric(diversity$L.DR.AR$P1) ~ years, col = 'red', lty = 3, lwd = 2)
+lines(as.numeric(diversity$L.DR.AR$P6) ~ years, col = 'blue', lty = 3, lwd = 2)
+lines(as.numeric(diversity$L.DR.AR$P11) ~ years, col = 'green', lty = 3, lwd = 2)
+legend('topright', c('UL: DS vs AR', 'L: AR vs S', 'L: DR vs AR'), lty = 1:3)
+```
+
+**Figure 2:** Beta-diversity indices evolution after logging. *Beta-diversity was measured with Shannon beta-diversity from Tsallis entropy between alive recruitments and dead survivors in unlogged plots represented by solid line, alive recruitments and survivors (dead and alive) in logged plots represented by dashed line, and dead recruitments and alive recruitments in logged plots represented by dotdash line.*
+
+# Discussion
+
+# *Acknowledgements*
+
+Ariane, Camille, Bruno for guiding and all poeple would have contributed to Paracou data collect during all the past years.
+
+# References
