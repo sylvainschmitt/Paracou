@@ -11,62 +11,57 @@ bibliography: refs.bib
 
 ## Keywords
 
+Beta-diversity, Selective logging, Tropical evergreen forest
+
 # Introduction
 
-- Selective logging
-    - What is selective logging
-    - Increased used in tropical forest
-- Sylviculture impact diversity *Gibson et al, 2011*
-    - What’s the impact of selective logging
-    - What’s the impact of complementary silvicultural practices
-- Long term study
-    - Selective logging clear short term impact
-    - What about the long term impact
-    - Evolution in time
-- Succession
-    - Evolution in time
-    - Temporary stages corresponding to floristic groups (Pioneers or others)
-    - Increase of diversity
-    - Toward a climax / equilibrium / stable turn over
-- Article questions:
-    - Turn over unlogged ? DS # AR
-    - Logged plot toward origin ? AR # AS + DS
-    - Temporary stages of floristic groups? DR # AR
-- What we've done:
-    - Design communities from individuals groups to answer to the three previous questions
-    - Used beta-diversity indices to compare those communities
+Tropical logging accounts for one eighth of global timber production [@blaser11]. It represents a major threat to biodiversity. It has particularly increased over the **xth years [cite]**. Most tropical timber production originates from selective logging, the targeted harvesting of timber in a single cutting cycle. Others sylvicultural practices, such as tree removal by poisoning, are sometimes involved in selective logging.
+
+The short-term negative impact of selective logging on biodiversity is well known **[cite]**, but less is known about the long term impact [@osazuwa15]. Moreover, even the short term impact on biodiversity is unclear, as sometimes short term increases can occur at low sylvicultural intensities [@martin15]. **More results about sylvicultural impact on biodiversity and beta-diversity more especially.**
+
+- **Diversity measurement**
+- **Diversity subsetting and $\beta$-diversity**
+- **Tsallis entropy**
+
+In this paper we designed communities from individuals with similar history. And we used $\beta$-diversity indices between those communities to address the following question: Does the floral composition turnover of logged forests differ from natural forests ?
 
 # Material and methods
 
 ## Study site
 
-## Taxonomic composition
+The study was carried out in six 6.25-ha plots established in 1970 in Paracou research station ($5^\circ 18'N$ and $52^\circ 53'W$) in French Guiana. The six plots are divided in two categories: three logged plots, named T3, and three unlogged control plots. Selective felling for timber plus logging of non-commercial species of 40-50cm diameter at breast height (dbh) for fuelwood was realizedin logged plots in 1987. Additionaly, non-commercial species over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T3 plots resulted in 35 up to 56% of above ground biomass (AGB) loss **What about number of stem and species**. Mean rainfall is 3mm by month with mean annual temperature of $26^\circ C$ marked with a 4 month long dry season and a nearly 8 month rainy season interrupted by a short drier period. The forest is a lowland tropical rain forest with a dominance of Fabaceae, Chrysobalanaceae, Lecythidaceae and Sapotaceae.
+
+## Floral composition
+
+Before logging, each tree was identified with its vernacular name. Vernacular names can encompass different species and sometimes different genera. Since 1990, suvivors and recruited trees are being determined to the species level. Consequently tree removed in 1987 or tree that died before they could be categorically identified are not specifically defined. Subsequent analysis will then use vernacular names. Censuses represent 263 vernacular names.
 
 ## Analysis
 
 ### Time sampling
 
-Since the logging of Paracou plots in 1987, all trees above 10 cm gbh were followed until today, especially in treatment 3 and unlogged plots. New recruitments were also registrated at the exception of years 1996, 1998, 2000, 2002, 2004 and 2006. For subsequent analysis we replace those years informations in term of rectuitments by their previous year in order to get correct turn-over measurements.
+The inventories of all plots were conducted every year from 1984 to 1994 and every two years after 1995
+on trees above 10 cm gbh. For subsequent analysis we replace missing years informations regarding rectuitments by the precedent years (n-1) in order to get correct turnover measurements.
 
 ### Community design
 
-In both treatment 3 and unlogged plots, we defined 4 communities **(guilds?)** inside each plots. First we decided to split survivors, being trees present before the logging, from recrutiements, being trees recruited after the logging. Second inside those two groups we separated alive from dead trees. We thus obtain 4 groups: Alive Recruitments (AR), Alive Survivors (AS), Dead Recruitments (DR), and Dead Survivors (DS); as described in the figure~1.
+To study floral composition turnover we divided the plots into communities with similar history. We used logging year as the start date for both logged and unlogged plots. Trees which attain 10cm dbh after this date were defined as recruits (R) whereas trees which had 10cm dbh before this date were defined as survivors (S), both in logged and unlogged plots. In each census, recruits and survivors were divided in two communities: trees alive (A) and dead trees (D). We thus obtain 4 communities Alive Recruits (AR), Alive Survivors (AS), Dead Recruits (DR), and Dead Survivors (DS), for each census in both logged and unlogged plots (see $figure~1$).
 
-**[Include draw.io figure for communities]**
+We used this design to examine the evolution of floral composition between the start date and a given census. The floral composition at start date comprised alive and dead survivors (AS and DS). Whereas all tree alive at given census are alive recruits (AR) and alive survivors (AS). Thus to study floral composition turnover between start date and a given census, we need to compare alive recruits (AR) to dead survivors (DS).
 
-**Figure 1:** Community design. *Plots trees were separated in four communities being Alive Recruitments (AR), Alive Survivors (AS), Dead Recruitments (DR), and Dead Survivors (DS).*
+![Community design. *Plots trees were separated in four communities being Alive Recruitments (AR), Alive Survivors (AS), Dead Recruitments (DR), and Dead Survivors (DS).*](Community.png)
 
 ### Diversity indices
 
-We used beta-diversity indices to look at the evolution of diversity between communities of interest inside plots. Beta-diversity was measured with reduced-bias beta diversity of order 1, corresponding to Shannon diversity, with Tsallis generalized entropy formula. 
+**ADD CITATIONS**
 
-First we used beta-diversity between alive recruitments and dead survivors in unlogged plots to characterized the natural turn-over present in Paracou. Dead survivors represents the floristic composition before the logging year wheareas alive recrutiments inform which floristic composition is now selected by the ecosystem in unlogged plots. Consequently ecosystem at climax should have null beta-diversity whereas eosystem with a natural turn-over will have a positive beta-diversity even at equilibrium.
+Floral composition diversity of communties can be subset in different level of diversity. We choosed to use $\beta$-diversity, being the supplementary information obtain by knowing each community composition compare to the mean community composition ($\alpha$-diversity). We more specifically used the Shannon diversity index. Shannon index, is an order 1 diversity index, giving a trade-off between the measurement of richness and eveness in floral composition. Shannon index of $\beta$-diversity was calculated with Tsallis generalized entropy formula [@marcon14b], and its exponential, with the following equations :
 
-Secondly, we used beta-diversity between alive recruitments and survivors (dead and alive) in logged plots to look for a come back of logged plots diversity toward origin. If the logged ecosystem is returning to original floristic compostion, beta-diversity between new species selected by the ecosystem represented by alive recruitments and original floristic compostion represented by all survivors should be decreasing in time toward 0.
+$$^1 H_{\beta}  = \sum_{i}{w_{i} \sum_{s}{{p_{si} ~ ln \frac{p_{si}}{p_{s}} } }} ~~ and ~~  ^1 D_{\beta} = e^{ ^1 H_{\beta}} $$
+with $^1 H_{\beta}$ the $\beta$-entropy and $^1 D_{\beta}$ the $\beta$-diversity of order 1 (Shannon) for $i$ communities of weights $w_{i}$ containing $s$ species of probability $p_{si}$ in the community $i$ and probability $p_{s}$ in the metacommunity.
 
-Finally, beta-diversity between dead recruitments and alive recruitments from logged plots was used to identify succession stages in floristic composition. Effectively, differences of floristic composition between alive and dead recruitments, i.e. species selected by the ecosystem after the logging, will show which new species are selected regarding the previously selected bew species inside recruitments during time. Succession theory **[cite]** hypothesis different floristic groups succeding toward the come back of the ecosystem to equilbrium. Following this hypothesis beta-diversity between dead recruitments and alive recruitments should show plateau indicating constant increase of new species corresponding of arrival from new floristic groups and decreas corresponding to the stable stage of the current floristic group.
+Bias was reduced using the best transformation following recommandations from @marcon14a.
 
-All analyses were conducted using the R 3.3.0  software environment [@r_core_team_r:_2016] with entropart package [@entropart].
+All analyses were conducted using the R 3.3.0  software environment [@R] with entropart package [@entropart].
 
 # Results
 
@@ -141,19 +136,14 @@ diversity <- sapply(years, function(y){
   UL.df <- lapply(Coms$UL, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
   UL.mc <- lapply(UL.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
   UL.DS.AR <- lapply(UL.mc, function(x){BetaDiversity(x)$Total})
-  ## L.AR.S
+  ## L.DS.AR
   L.df <- lapply(Coms$L, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
-  L.df <- lapply(L.df, function(x){x$S <- x$AS + x$DS ; return(x)})
-  L.mc <- lapply(L.df, function(x) {MetaCommunity(x[c('AR', 'S')])})
-  L.AR.S <- lapply(L.mc, function(x){BetaDiversity(x)$Total})
-  ## L.DR.AR
-  L.mc <- lapply(L.df, function(x) {invisible(try(MetaCommunity(x[c('DR', 'AR')])))}) # ! TRY ! In 88 and 89 no DR in P11
-  L.DR.AR <- lapply(L.mc, function(x){invisible(try(BetaDiversity(x)$Total))})
+  L.mc <- lapply(L.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
+  L.DS.AR <- lapply(L.mc, function(x){BetaDiversity(x)$Total})
   
   return(list(
     UL.DS.AR = UL.DS.AR,
-    L.AR.S = L.AR.S,
-    L.DR.AR = L.DR.AR
+    L.DS.AR = L.DS.AR
   ))
 }, simplify = F)
 
@@ -162,29 +152,49 @@ diversity <- lapply(diversity, `[`, names(diversity[[1]]))
 diversity <- apply(do.call(rbind, diversity), 2, as.list)
 diversity <- lapply(diversity, function(x){do.call('rbind', lapply(x, rbind))})
 diversity <- lapply(diversity, function(x){row.names(x) <- years ; return(x)})
-diversity <- lapply(diversity, data.frame) # ! Try error for L.DR.AR #
+diversity <- lapply(diversity, data.frame)
 ```
 
 ```{r plot, include=TRUE}
-plot(as.numeric(diversity$UL.DS.AR$P12) ~ years, xlab = 'year', ylab = 'Beta-diversity Shannon', pch = ' ', ylim = c(1,3))
-lines(as.numeric(diversity$UL.DS.AR$P4) ~ years, col = 'red', lty = 1, lwd = 2)
-lines(as.numeric(diversity$UL.DS.AR$P8) ~ years, col = 'blue', lty = 1, lwd = 2)
-lines(as.numeric(diversity$UL.DS.AR$P12) ~ years, col = 'green', lty = 1, lwd = 2)
-lines(as.numeric(diversity$L.AR.S$P1) ~ years, col = 'red', lty = 2, lwd = 2)
-lines(as.numeric(diversity$L.AR.S$P6) ~ years, col = 'blue', lty = 2, lwd = 2)
-lines(as.numeric(diversity$L.AR.S$P11) ~ years, col = 'green', lty = 2, lwd = 2)
-lines(as.numeric(diversity$L.DR.AR$P1) ~ years, col = 'red', lty = 3, lwd = 2)
-lines(as.numeric(diversity$L.DR.AR$P6) ~ years, col = 'blue', lty = 3, lwd = 2)
-lines(as.numeric(diversity$L.DR.AR$P11) ~ years, col = 'green', lty = 3, lwd = 2)
-legend('topright', c('UL: DS vs AR', 'L: AR vs S', 'L: DR vs AR'), lty = 1:3)
+library(ggplot2)
+
+# data
+diversity <- lapply(diversity, function(x){
+  data.frame(apply(x, 2, as.numeric), row.names = years)
+  })
+diversity.stats <- lapply(diversity, function(x){
+  data.frame(year = years,
+             mean = apply(x, 1, mean, na.rm = T),
+             se = apply(x, 1, function(x){sd(x, na.rm = T) / sqrt(length(x))}))
+})
+diversity.stats <- do.call('rbind', diversity.stats)
+diversity.stats$coms <- as.factor(rep(names(diversity), each = length(years)))
+
+# plot
+ggplot(diversity.stats, aes(x = year, y = mean, colour = coms)) + 
+  geom_errorbar(aes(ymin = mean - se, ymax = mean + se), 
+                colour = "black", width=.1) +
+  geom_line() +
+  geom_point(size=2, shape=21, fill="white") +
+  xlab('year') +
+  ylab('Beta-diversity (Shannon index)') +
+  scale_colour_hue(name="Beta-diversity index",
+                   breaks=c("UL.DS.AR","L.DS.AR"),
+                   labels=c("AR and DS in Unlogged",
+                            "AR and DS in Logged"),
+                   l=40) +
+  expand_limits(y=1) +
+  theme_bw() +
+  theme(legend.justification = c(1,1),
+        legend.position = c(1,1))
 ```
 
-**Figure 2:** Beta-diversity indices evolution after logging. *Beta-diversity was measured with Shannon beta-diversity from Tsallis entropy between alive recruitments and dead survivors in unlogged plots represented by solid line, alive recruitments and survivors (dead and alive) in logged plots represented by dashed line, and dead recruitments and alive recruitments in logged plots represented by dotdash line.*
+Figure 2: Beta-diversity indices evolution after logging. *Beta-diversity was measured with Shannon beta-diversity from Tsallis entropy between alive recruits (AR) and dead survivors (DS) in unlogged (UL) plots represented by blue line and in logged (L) plots represented by red line. Vertical bars represents the standard errors.*
 
 # Discussion
 
 # *Acknowledgements*
 
-Ariane, Camille, Bruno for guiding and all poeple would have contributed to Paracou data collect during all the past years.
+Ariane, Camille, Bruno for guiding. Pascal and all poeple who have contributed to Paracou data collect during all the past years. Tim for english useful comments.
 
 # References
