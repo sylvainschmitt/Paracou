@@ -1,8 +1,8 @@
 ---
-title: "Badass title like beta diversity change with logging !"
-author: "Morgan Knoester & Sylvain Schmitt"
+title: "Beta-diversity over 29 years in response to logging"
+author: "Job Knoester & Sylvain Schmitt"
 date: "October 12, 2016"
-output: pdf_document
+output: html_document
 csl: mee.csl
 bibliography: refs.bib
 ---
@@ -15,13 +15,13 @@ Beta-diversity, Selective logging, Tropical evergreen forest
 
 # Introduction
 
-Tropical logging accounts for one eighth of global timber production [@blaser11]. It represents a major threat to biodiversity. It has particularly increased over the **xth years [cite]**. Most tropical timber production originates from selective logging, the targeted harvesting of timber in a single cutting cycle. Others sylvicultural practices, such as tree removal by poisoning, are sometimes involved in selective logging.
+Tropical logging accounts for one eighth of global timber production [@blaser11]. It represents a major threat to biodiversity. Most tropical timber production originates from selective logging, the targeted harvesting of timber in a single cutting cycle [@martin15]. Others sylvicultural practices, such as tree removal by poisoning, are sometimes also involved in selective logging.
 
-The short-term negative impact of selective logging on biodiversity is well known **[cite]**, but less is known about the long term impact [@osazuwa15]. Moreover, even the short term impact on biodiversity is unclear, as sometimes short term increases can occur at low sylvicultural intensities [@martin15]. **More results about sylvicultural impact on biodiversity and beta-diversity more especially.**
+The short-term negative impact of selective logging on biodiversity is well known [@deAvila15; @carreno12; @gibson11; @martin15], but less is known about the long term impact [@osazuwa15a; @osazuwa15b]. Moreover, even the short term impact on biodiversity is unclear, as sometimes short term increases can occur at low sylvicultural intensities [@martin15]. Still, @deAvila15 found that additional sylvicultural practices and logging damages had stronger effect on diversity than logging itself. @carreno12 found no direct effect of medium intensity logging on species diversity but a community drift towards 'fast' [@reich14] acquisitive species. 
 
-- **Diversity measurement**
-- **Diversity subsetting and $\beta$-diversity**
-- **Tsallis entropy**
+To evaluate long term impact of selective logging diversity measurement is needed. The first ways of measuring diversity, is the number of species known as species richness. This measurement of diversity highlight the richness but not the eveness of the distribution of species inside communities. Shannon index and Simpson index were then developped taking more and more eveness into account [@shannon49]. Finally, @tsallis88 unified measurement with the help of entropy, *i.e.* the amount of uncertainty calculated from the frequency distribution of a community [@marcon14b]. In parrallel partitionning of diversity was investigated. @jost07 helped to clarify the concept of partitionning diversity $\gamma$ of the metacommunity into $\beta$ and $\alpha$ diversities. But the debate is still on, besides an atempt to solve the debate by @chao12.
+
+Effectively, $\alpha$-diversity, the local diversity, has been highly documented in tropical forests [@valencia94]. Whereas $\beta$-diversity, how species composition changes with distances and among communities, has been less investigated [@condit02]. Still $\beta$-diversity is a central concept about diversity organisation inside tropical forests. Species turnover can be linked to species adpatations to climates or substrates [@paoli06], results from limited dispersal [@qian09], or due to other historical effects such as logging. Consequently $\beta$-diversity, seems at least, as important as $\alpha$-diversity for conservation and forest management.
 
 In this paper we designed communities from individuals with similar history. And we used $\beta$-diversity indices between those communities to address the following question: Does the floral composition turnover of logged forests differ from natural forests ?
 
@@ -29,7 +29,14 @@ In this paper we designed communities from individuals with similar history. And
 
 ## Study site
 
-The study was carried out in six 6.25-ha plots established in 1970 in Paracou research station ($5^\circ 18'N$ and $52^\circ 53'W$) in French Guiana. The six plots are divided in two categories: three logged plots, named T3, and three unlogged control plots. Selective felling for timber plus logging of non-commercial species of 40-50cm diameter at breast height (dbh) for fuelwood was realizedin logged plots in 1987. Additionaly, non-commercial species over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T3 plots resulted in 35 up to 56% of above ground biomass (AGB) loss **What about number of stem and species**. Mean rainfall is 3mm by month with mean annual temperature of $26^\circ C$ marked with a 4 month long dry season and a nearly 8 month rainy season interrupted by a short drier period. The forest is a lowland tropical rain forest with a dominance of Fabaceae, Chrysobalanaceae, Lecythidaceae and Sapotaceae.
+The study was carried out in Paracou research station ($5^\circ 18'N$ and $52^\circ 53'W$) in French Guiana. The site has a tropical wet climate, with an average annual rainfall of 2920mm and temperature of $26^\circ C$ marked with a 4 month long dry season and a nearly 8 month rainy season interrupted by a short drier period. The forest is a lowland tropical rain forest with a dominance of Fabaceae, Chrysobalanaceae, Lecythidaceae and Sapotaceae.
+
+In 1984, twelves plots of 6.25ha were established to study selective logging effect with different intensities. From 1986 to 1988, four logging treatments (T0, T1, T2 and T3) were applied to the plots according to randomized block design with three replicates [@baraloto12]:
+
+- T0 plots are the control plots were no selevtive logging nor other sylvicultural practices were applied.
+- T1 plots undergone selective felling for timber of about 10 trees/ha of 50-60cm diameter at breast height (dbh) belonging to 58 commercial species. Selective logging in T1 plots resulted in 12 up to 33% of above ground biomass (AGB) loss.
+- T2 plots undergone selective felling for timber of about 30 trees/ha. Additionaly, non-commercial species (NCS) over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T2 plots resulted in 33 up to 56% of AGB loss.
+- T3 plots undergone selective felling for timber plus logging of NCS of 40-50cm dbh for fuelwood. Additionaly, NCS over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T3 plots resulted in 35 up to 56% of AGB loss.
 
 ## Floral composition
 
@@ -39,8 +46,7 @@ Before logging, each tree was identified with its vernacular name. Vernacular na
 
 ### Time sampling
 
-The inventories of all plots were conducted every year from 1984 to 1994 and every two years after 1995
-on trees above 10 cm gbh. For subsequent analysis we replace missing years informations regarding rectuitments by the precedent years (n-1) in order to get correct turnover measurements.
+The inventories of all plots were conducted every year from 1984 to 1994 and every two years from 1995 to 2012, and again every years after 2012 on trees above 10 cm gbh. For subsequent analysis we replace missing years informations regarding rectuitments by the precedent years (n-1) in order to get correct turnover measurements.
 
 ### Community design
 
@@ -52,8 +58,6 @@ We used this design to examine the evolution of floral composition between the s
 
 ### Diversity indices
 
-**ADD CITATIONS**
-
 Floral composition diversity of communties can be subset in different level of diversity. We choosed to use $\beta$-diversity, being the supplementary information obtain by knowing each community composition compare to the mean community composition ($\alpha$-diversity). We more specifically used the Shannon diversity index. Shannon index, is an order 1 diversity index, giving a trade-off between the measurement of richness and eveness in floral composition. Shannon index of $\beta$-diversity was calculated with Tsallis generalized entropy formula [@marcon14b], and its exponential, with the following equations :
 
 $$^1 H_{\beta}  = \sum_{i}{w_{i} \sum_{s}{{p_{si} ~ ln \frac{p_{si}}{p_{s}} } }} ~~ and ~~  ^1 D_{\beta} = e^{ ^1 H_{\beta}} $$
@@ -64,6 +68,14 @@ Bias was reduced using the best transformation following recommandations from @m
 All analyses were conducted using the R 3.3.0  software environment [@R] with entropart package [@entropart].
 
 # Results
+
+**See $figure~1$**
+
+- **Pike of T0 in 1988 is an artefact**
+- **$\beta$ T0 < $\beta$ logged**
+- **$\beta$ T0 almost stable and > 1 but low, little decrease but see stanrdad error**
+- **$\beta$ logged globally decreased but slower and slower in time with a plateau at the beginning**
+- **First T1>T2>T3 and after 1995 T3>T2>T1**
 
 ```{r config, message=FALSE, warning=FALSE, include=FALSE}
 rm(list = ls()) ; invisible(gc())
@@ -112,6 +124,7 @@ row.names(bd) <- bd$id
 ```{r diversity}
 library(entropart)
 years <- c(1988:2015)
+q = 1 # Tsallis entropy order
 diversity <- sapply(years, function(y){
   
   # Attributing communities
@@ -122,28 +135,46 @@ diversity <- sapply(years, function(y){
   }
   
   # Building lists of treatment and repetition
-  Coms <- list(L = subset(bd_y, treatment == 0), 
-               UL = subset(bd_y, treatment == 3))
-  Coms$L <- list(P1 = subset(Coms$L, plot == 1),
-                 P6 = subset(Coms$L, plot == 6),
-                 P11 = subset(Coms$L, plot == 11))
-  Coms$UL <- list(P4 = subset(Coms$UL, plot == 4),
-                  P8 = subset(Coms$UL, plot == 8),
-                  P12 = subset(Coms$UL, plot == 12))
+  Coms <- list(T0 = subset(bd_y, treatment == 0), 
+               T1 = subset(bd_y, treatment == 1),
+               T2 = subset(bd_y, treatment == 2),
+               T3 = subset(bd_y, treatment == 3))
+  Coms$T0 <- list(P1 = subset(Coms$T0, plot == 1),
+                  P6 = subset(Coms$T0, plot == 6),
+                  P11 = subset(Coms$T0, plot == 11))
+  Coms$T1 <- list(P2 = subset(Coms$T1, plot == 2),
+                 P7 = subset(Coms$T1, plot == 7),
+                 P9 = subset(Coms$T1, plot == 9))
+  Coms$T2 <- list(P3 = subset(Coms$T2, plot == 3),
+                 P5 = subset(Coms$T2, plot == 5),
+                 P10 = subset(Coms$T2, plot == 10))
+  Coms$T3 <- list(P4 = subset(Coms$T3, plot == 4),
+                 P8 = subset(Coms$T3, plot == 8),
+                 P12 = subset(Coms$T3, plot == 12))
   
   # Extracting searched beta-diversities
-  ## UL.DS.AR
-  UL.df <- lapply(Coms$UL, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
-  UL.mc <- lapply(UL.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
-  UL.DS.AR <- lapply(UL.mc, function(x){BetaDiversity(x)$Total})
-  ## L.DS.AR
-  L.df <- lapply(Coms$L, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
-  L.mc <- lapply(L.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
-  L.DS.AR <- lapply(L.mc, function(x){BetaDiversity(x)$Total})
+  ## T0.DS.AR
+  T0.df <- lapply(Coms$T0, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T0.mc <- lapply(T0.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
+  T0.DS.AR <- lapply(T0.mc, function(x){BetaDiversity(x, q = q)$Total})
+  ## T1.DS.AR
+  T1.df <- lapply(Coms$T1, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T1.mc <- lapply(T1.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
+  T1.DS.AR <- lapply(T1.mc, function(x){BetaDiversity(x, q = q)$Total})
+  ## T2.DS.AR
+  T2.df <- lapply(Coms$T2, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T2.mc <- lapply(T2.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
+  T2.DS.AR <- lapply(T2.mc, function(x){BetaDiversity(x, q = q)$Total})
+  ## T3.DS.AR
+  T3.df <- lapply(Coms$T3, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T3.mc <- lapply(T3.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
+  T3.DS.AR <- lapply(T3.mc, function(x){BetaDiversity(x, q = q)$Total})
   
   return(list(
-    UL.DS.AR = UL.DS.AR,
-    L.DS.AR = L.DS.AR
+    T0.DS.AR = T0.DS.AR,
+    T1.DS.AR = T1.DS.AR,
+    T2.DS.AR = T2.DS.AR,
+    T3.DS.AR = T3.DS.AR
   ))
 }, simplify = F)
 
@@ -179,9 +210,14 @@ ggplot(diversity.stats, aes(x = year, y = mean, colour = coms)) +
   xlab('year') +
   ylab('Beta-diversity (Shannon index)') +
   scale_colour_hue(name="Beta-diversity index",
-                   breaks=c("UL.DS.AR","L.DS.AR"),
-                   labels=c("AR and DS in Unlogged",
-                            "AR and DS in Logged"),
+                   breaks=c("T0.DS.AR",
+                            "T1.DS.AR",
+                            "T2.DS.AR",
+                            "T3.DS.AR"),
+                   labels=c("AR and DS in T0",
+                            "AR and DS in T1",
+                            "AR and DS in T2",
+                            "AR and DS in T3"),
                    l=40) +
   expand_limits(y=1) +
   theme_bw() +
@@ -189,7 +225,7 @@ ggplot(diversity.stats, aes(x = year, y = mean, colour = coms)) +
         legend.position = c(1,1))
 ```
 
-Figure 2: Beta-diversity indices evolution after logging. *Beta-diversity was measured with Shannon beta-diversity from Tsallis entropy between alive recruits (AR) and dead survivors (DS) in unlogged (UL) plots represented by blue line and in logged (L) plots represented by red line. Vertical bars represents the standard errors.*
+Figure 2: Beta-diversity indices evolution after logging. *Beta-diversity was measured with Shannon beta-diversity from Tsallis entropy between alive recruits (AR) and dead survivors (DS) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines repsectivelly. Vertical bars represents the standard errors.*
 
 # Discussion
 
