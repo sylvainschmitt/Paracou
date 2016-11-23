@@ -1,7 +1,7 @@
 Package: Paracou
 Type: Package
 Title: Paracou data set analysis
-Version: 0.1.9005
+Version: 0.1.9006
 Author: Sylvain Schmitt, Morgan Job Knoester
 Maintainer: Sylvain Schmitt <sylvain.schmitt@agroparistech.fr>
 Description: Paracou data set analysis, mainly for master 2 project on

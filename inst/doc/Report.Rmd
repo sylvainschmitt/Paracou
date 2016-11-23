@@ -15,55 +15,55 @@ Beta-diversity, Selective logging, Tropical evergreen forest
 
 # Introduction
 
-Tropical logging accounts for one eighth of global timber production [@blaser11]. It represents a major threat to biodiversity. Most tropical timber production originates from selective logging, the targeted harvesting of timber in a single cutting cycle [@martin15]. Others sylvicultural practices, such as tree removal by poisoning, are sometimes also involved in selective logging.
+Tropical logging accounts for one eighth of global timber production [@blaser11]. It represents a major threat to biodiversity [@gibson11]. Most tropical timber production originates from selective logging, the targeted harvesting of timber from commercial species in a single cutting cycle [@martin15]. Others sylvicultural practices, such as tree removal by poisoning, are sometimes also involved in selective logging.
 
-The short-term negative impact of selective logging on biodiversity is well known [@deAvila15; @carreno12; @gibson11; @martin15], but less is known about the long term impact [@osazuwa15a; @osazuwa15b]. Moreover, even the short term impact on biodiversity is unclear, as sometimes short term increases can occur at low sylvicultural intensities [@martin15]. Still, @deAvila15 found that additional sylvicultural practices and logging damages had stronger effect on diversity than logging itself. @carreno12 found no direct effect of medium intensity logging on species diversity but a community drift towards 'fast' [@reich14] acquisitive species. 
+The short-term negative impact of selective logging on biodiversity is well known [@deAvila15; @carreno12; @gibson11; @martin15]. @deAvila15 found that additional sylvicultural practices and logging damages had stronger negative effect on diversity than logging itself. @carreno12 found no direct effect of medium intensity logging on species diversity but a community drift towards 'fast' [@reich14] acquisitive species. However, even the short term impact on biodiversity is unclear, as sometimes short term increases can occur at low sylvicultural intensities [@martin15]. Much less is known about the long term impact [@osazuwa15a; @osazuwa15b].
 
-To evaluate long term impact of selective logging diversity measurement is needed. The first ways of measuring diversity, is the number of species known as species richness. This measurement of diversity highlight the richness but not the eveness of the distribution of species inside communities. Shannon index and Simpson index were then developped taking more and more eveness into account [@shannon49]. Finally, @tsallis88 unified measurement with the help of entropy, *i.e.* the amount of uncertainty calculated from the frequency distribution of a community [@marcon14b]. In parrallel partitionning of diversity was investigated. @jost07 helped to clarify the concept of partitionning diversity $\gamma$ of the metacommunity into $\beta$ and $\alpha$ diversities. But the debate is still on, besides an atempt to solve the debate by @chao12.
+There are a number of ways diversity can be measured. The first ways is to count the number of species, known as species richness. This measurement highlight the richness but not the evenness of the abundnce distribution of species within communities. Second, the Shannon and Simpson indices takes more evenness into account, particularly the latter [@shannon49]. Finally, @tsallis88 combined these measurements with the help of entropy, i.e. the amount of uncertainty calculated from the frequency distribution of a community [@marcon14b]. @jost07 helped to clarify the concept of partitioning diversity $\gamma$ of the metacommunity into $\beta$ and $\alpha$ diversities. But the debate is ongoing, in spite of an atempt to resolve it by @chao12.
 
-Effectively, $\alpha$-diversity, the local diversity, has been highly documented in tropical forests [@valencia94]. Whereas $\beta$-diversity, how species composition changes with distances and among communities, has been less investigated [@condit02]. Still $\beta$-diversity is a central concept about diversity organisation inside tropical forests. Species turnover can be linked to species adpatations to climates or substrates [@paoli06], results from limited dispersal [@qian09], or due to other historical effects such as logging. Consequently $\beta$-diversity, seems at least, as important as $\alpha$-diversity for conservation and forest management.
+$\alpha$-diversity, the local diversity, has been highly documented in tropical forests [@valencia94]. Whereas $\beta$-diversity, how species composition changes with distances and among communities, has been less investigated [@condit02]. Still, $\beta$-diversity is a central concept about diversity organisation inside tropical forests. $\beta$-diversity can result from species adptations to climates or substrates [@paoli06], from limited dispersal [@qian09], or from other historical effects such as logging. Consequently $\beta$-diversity seems at least as important as $\alpha$-diversity for conservation and forest management.
 
-In this paper we designed communities from individuals with similar history. And we used $\beta$-diversity indices between those communities to address the following question: Does the floral composition turnover of logged forests differ from natural forests ?
+In this paper we designed communities from individuals with similar history. And we used $\beta$-diversity indices between those communities to study and compare turnover of logged and unlogged forests along time.
 
 # Material and methods
 
 ## Study site
 
-The study was carried out in Paracou research station ($5^\circ 18'N$ and $52^\circ 53'W$) in French Guiana. The site has a tropical wet climate, with an average annual rainfall of 2920mm and temperature of $26^\circ C$ marked with a 4 month long dry season and a nearly 8 month rainy season interrupted by a short drier period. The forest is a lowland tropical rain forest with a dominance of Fabaceae, Chrysobalanaceae, Lecythidaceae and Sapotaceae.
+The study was carried out in Paracou research station ($5^\circ 18'N$ and $52^\circ 53'W$) in French Guiana. The site has a tropical wet climate, with an average annual rainfall of 2920mm and temperature of $26^\circ C$ marked with a 4 month dry season and a 8 month rainy season interrupted by a short drier period. The forest is a lowland tropical rain forest with a dominance of Fabaceae, Chrysobalanaceae, Lecythidaceae and Sapotaceae.
 
-In 1984, twelves plots of 6.25ha were established to study selective logging effect with different intensities. From 1986 to 1988, four logging treatments (T0, T1, T2 and T3) were applied to the plots according to randomized block design with three replicates [@baraloto12]:
+In 1984, twelves plots of 6.25ha were established to study the effects of different intensities of selective logging. From 1986 to 1988, four logging treatments (T0, T1, T2 and T3) were applied to the plots according to randomized block design with three replicates [@baraloto12]:
 
-- T0 plots are the control plots were no selevtive logging nor other sylvicultural practices were applied.
-- T1 plots undergone selective felling for timber of about 10 trees/ha of 50-60cm diameter at breast height (dbh) belonging to 58 commercial species. Selective logging in T1 plots resulted in 12 up to 33% of above ground biomass (AGB) loss.
-- T2 plots undergone selective felling for timber of about 30 trees/ha. Additionaly, non-commercial species (NCS) over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T2 plots resulted in 33 up to 56% of AGB loss.
-- T3 plots undergone selective felling for timber plus logging of NCS of 40-50cm dbh for fuelwood. Additionaly, NCS over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T3 plots resulted in 35 up to 56% of AGB loss.
+- T0 plots are the control plots were no selective logging or other sylvicultural practices were applied.
+- T1 plots underwent selective felling for timber of 50-60cm diameter at breast height (dbh) trees from 58 commercial species at an intensity of about 10 trees/ha. Selective logging in T1 plots resulted in 12-33% above ground biomass (AGB) loss.
+- T2 plots underwent selective felling for timber of about 30 trees/ha from same commercial species. Additionally, non-commercial species (NCS) over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T2 plots resulted in 33-56% AGB loss.
+- T3 plots underwent selective felling for timber from same commercial species plus logging of NCS of 40-50cm dbh for fuelwood. Additionally, NCS over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T3 plots resulted in 35-56% AGB loss.
 
 ## Floral composition
 
-Before logging, each tree was identified with its vernacular name. Vernacular names can encompass different species and sometimes different genera. Since 1990, suvivors and recruited trees are being determined to the species level. Consequently tree removed in 1987 or tree that died before they could be categorically identified are not specifically defined. Subsequent analysis will then use vernacular names. Censuses represent 263 vernacular names.
+Before logging, each tree was identified by its vernacular name. Vernacular names can encompass different species and sometimes different genera. Since 1990, survivors and recruited trees have begun to be identified by species name. Consequently, trees removed in 1987 or trees that died before they could be categorized were not identified to the species level. But use of vernacular names has been shown to only induce a small discrepancy (Mirabelle, personnal communications). Our analysis will then use vernacular names. Censuses included 263 vernacular names.
 
 ## Analysis
 
 ### Time sampling
 
-The inventories of all plots were conducted every year from 1984 to 1994 and every two years from 1995 to 2012, and again every years after 2012 on trees above 10 cm gbh. For subsequent analysis we replace missing years informations regarding rectuitments by the precedent years (n-1) in order to get correct turnover measurements.
+Inventories of all plots were conducted annually from 1984 to 1994, every two years from 1995 to 2012, and annually from 2012 on trees above 10 cm gbh. For our analysis we generate recruitment figures for missing years by replicating that of the previous year (n-1) in order to simulate turnover measurements.
 
 ### Community design
 
-To study floral composition turnover we divided the plots into communities with similar history. We used logging year as the start date for both logged and unlogged plots. Trees which attain 10cm dbh after this date were defined as recruits (R) whereas trees which had 10cm dbh before this date were defined as survivors (S), both in logged and unlogged plots. In each census, recruits and survivors were divided in two communities: trees alive (A) and dead trees (D). We thus obtain 4 communities Alive Recruits (AR), Alive Survivors (AS), Dead Recruits (DR), and Dead Survivors (DS), for each census in both logged and unlogged plots (see $figure~1$).
+To study floral turnovers we divided the plots into communities with similar histories. We used the logging year as the start date for both logged and unlogged plots. Trees which attain 10cm dbh after this date were defined as recruits (R) whereas trees which had 10cm dbh before this date were defined as survivors (S), both in logged and unlogged plots. In each census, recruits and survivors were divided in two communities: alive trees (A) and dead trees (D). We thus obtain 4 communities: Alive Recruits (AR), Alive Survivors (AS), Dead Recruits (DR), and Dead Survivors (DS) for each census in both logged and unlogged plots (see $figure~1$).
 
-We used this design to examine the evolution of floral composition between the start date and a given census. The floral composition at start date comprised alive and dead survivors (AS and DS). Whereas all tree alive at given census are alive recruits (AR) and alive survivors (AS). Thus to study floral composition turnover between start date and a given census, we need to compare alive recruits (AR) to dead survivors (DS).
+We used this design to examine the evolution of floral turnover between the start date and alive recruits from a given census. The floral composition at start date comprised alive and dead survivors (AS and DS). Thus to study floral turnover between start date and alive recruits from a given census, we need to compare alive recruits (AR) to survivors (AS and DS).
 
-![Community design. *Plots trees were separated in four communities being Alive Recruitments (AR), Alive Survivors (AS), Dead Recruitments (DR), and Dead Survivors (DS).*](Community.png)
+![Community design. *Tree plots were separated in four communities being Alive Recruitments (AR), Alive Survivors (AS), Dead Recruitments (DR), and Dead Survivors (DS).*](Community.png)
 
 ### Diversity indices
 
-Floral composition diversity of communties can be subset in different level of diversity. We choosed to use $\beta$-diversity, being the supplementary information obtain by knowing each community composition compare to the mean community composition ($\alpha$-diversity). We more specifically used the Shannon diversity index. Shannon index, is an order 1 diversity index, giving a trade-off between the measurement of richness and eveness in floral composition. Shannon index of $\beta$-diversity was calculated with Tsallis generalized entropy formula [@marcon14b], and its exponential, with the following equations :
+Diversity of communities can be partitioned into different level of diversity. We chose to use $\beta$-diversity, as extra information is obtained by knowing each community’s composition, compared to the mean community composition ($\alpha$-diversity). We more specifically used the Shannon diversity index. Shannon index, is an order 1 diversity index, giving a trade-off between the measurement of richness and evenness in floral composition. Shannon index of $\beta$-diversity was calculated with Tsallis generalized entropy formula [@marcon14b], and its exponential which gives the equivalent number of communities, with the following equations :
 
 $$^1 H_{\beta}  = \sum_{i}{w_{i} \sum_{s}{{p_{si} ~ ln \frac{p_{si}}{p_{s}} } }} ~~ and ~~  ^1 D_{\beta} = e^{ ^1 H_{\beta}} $$
 with $^1 H_{\beta}$ the $\beta$-entropy and $^1 D_{\beta}$ the $\beta$-diversity of order 1 (Shannon) for $i$ communities of weights $w_{i}$ containing $s$ species of probability $p_{si}$ in the community $i$ and probability $p_{s}$ in the metacommunity.
 
-Bias was reduced using the best transformation following recommandations from @marcon14a.
+Bias was reduced using the ‘best’ transformation following recommendations from @marcon14a.
 
 All analyses were conducted using the R 3.3.0  software environment [@R] with entropart package [@entropart].
 
@@ -71,11 +71,14 @@ All analyses were conducted using the R 3.3.0  software environment [@R] with en
 
 **See $figure~1$**
 
-- **Pike of T0 in 1988 is an artefact**
-- **$\beta$ T0 < $\beta$ logged**
-- **$\beta$ T0 almost stable and > 1 but low, little decrease but see stanrdad error**
-- **$\beta$ logged globally decreased but slower and slower in time with a plateau at the beginning**
-- **First T1>T2>T3 and after 1995 T3>T2>T1**
+- **Pike of T0 in 1988 is an artefact, use ratio between AR and S in supplementary materials 1 as an argument**
+- **Effects of logging on evenness and not richness, see diversity indices at order 0 and 2 in Supplementary materials 2 and 3**
+- **$\beta _{T0} < \beta _{logged}$**
+- **$\beta _{T0}$ almost stable and > 1 but low**
+- **T3>T2>T1**
+- **$\beta _{logged}$ globally stable in time**
+- **$\beta _{T3}$ tendency to increase in time**
+- **Use of rank-abundance plots in 2015 to argue**
 
 ```{r config, message=FALSE, warning=FALSE, include=FALSE}
 rm(list = ls()) ; invisible(gc())
@@ -121,7 +124,7 @@ bd <- bd[which(!duplicated(bd$id)),]
 row.names(bd) <- bd$id
 ```
 
-```{r diversity}
+```{r diversity1}
 library(entropart)
 years <- c(1988:2015)
 q = 1 # Tsallis entropy order
@@ -155,26 +158,51 @@ diversity <- sapply(years, function(y){
   # Extracting searched beta-diversities
   ## T0.DS.AR
   T0.df <- lapply(Coms$T0, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
-  T0.mc <- lapply(T0.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
-  T0.DS.AR <- lapply(T0.mc, function(x){BetaDiversity(x, q = q)$Total})
+  T0.df <- lapply(T0.df, function(x) {x$S <- x$AS + x$DS ; return(x)})
+  T0.mc <- lapply(T0.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T0.S.AR <- lapply(T0.mc, function(x){BetaDiversity(x, q = q)$Total})
   ## T1.DS.AR
   T1.df <- lapply(Coms$T1, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
-  T1.mc <- lapply(T1.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
-  T1.DS.AR <- lapply(T1.mc, function(x){BetaDiversity(x, q = q)$Total})
+  T1.df <- lapply(T1.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T1.mc <- lapply(T1.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T1.S.AR <- lapply(T1.mc, function(x){BetaDiversity(x, q = q)$Total})
   ## T2.DS.AR
   T2.df <- lapply(Coms$T2, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
-  T2.mc <- lapply(T2.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
-  T2.DS.AR <- lapply(T2.mc, function(x){BetaDiversity(x, q = q)$Total})
+  T2.df <- lapply(T2.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T2.mc <- lapply(T2.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T2.S.AR <- lapply(T2.mc, function(x){BetaDiversity(x, q = q)$Total})
   ## T3.DS.AR
   T3.df <- lapply(Coms$T3, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
-  T3.mc <- lapply(T3.df, function(x) {MetaCommunity(x[c('DS', 'AR')])})
-  T3.DS.AR <- lapply(T3.mc, function(x){BetaDiversity(x, q = q)$Total})
+  T3.df <- lapply(T3.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T3.mc <- lapply(T3.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T3.S.AR <- lapply(T3.mc, function(x){BetaDiversity(x, q = q)$Total})
   
   return(list(
-    T0.DS.AR = T0.DS.AR,
-    T1.DS.AR = T1.DS.AR,
-    T2.DS.AR = T2.DS.AR,
-    T3.DS.AR = T3.DS.AR
+    T0.S.AR = T0.S.AR,
+    T1.S.AR = T1.S.AR,
+    T2.S.AR = T2.S.AR,
+    T3.S.AR = T3.S.AR
   ))
 }, simplify = F)
 
@@ -186,7 +214,7 @@ diversity <- lapply(diversity, function(x){row.names(x) <- years ; return(x)})
 diversity <- lapply(diversity, data.frame)
 ```
 
-```{r plot, include=TRUE}
+```{r plot1, include=TRUE}
 library(ggplot2)
 
 # data
@@ -208,29 +236,569 @@ ggplot(diversity.stats, aes(x = year, y = mean, colour = coms)) +
   geom_line() +
   geom_point(size=2, shape=21, fill="white") +
   xlab('year') +
-  ylab('Beta-diversity (Shannon index)') +
+  ylab('Beta-diversity of order 1 (Shannon index)') +
   scale_colour_hue(name="Beta-diversity index",
-                   breaks=c("T0.DS.AR",
-                            "T1.DS.AR",
-                            "T2.DS.AR",
-                            "T3.DS.AR"),
-                   labels=c("AR and DS in T0",
-                            "AR and DS in T1",
-                            "AR and DS in T2",
-                            "AR and DS in T3"),
+                   breaks=c("T0.S.AR",
+                            "T1.S.AR",
+                            "T2.S.AR",
+                            "T3.S.AR"),
+                   labels=c("AR and S in T0",
+                            "AR and S in T1",
+                            "AR and S in T2",
+                            "AR and S in T3"),
                    l=40) +
   expand_limits(y=1) +
   theme_bw() +
-  theme(legend.justification = c(1,1),
-        legend.position = c(1,1))
+  theme(legend.justification = c(1,0),
+        legend.position = c(1,0))
 ```
 
-Figure 2: Beta-diversity indices evolution after logging. *Beta-diversity was measured with Shannon beta-diversity from Tsallis entropy between alive recruits (AR) and dead survivors (DS) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines repsectivelly. Vertical bars represents the standard errors.*
+Figure 2: Beta-diversity of order 1 (Shannon index) evolution after logging. *Beta-diversity was measured with Shannon beta-diversity from Tsallis entropy at order 2 between alive recruits (AR) and survivors (S) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines repsectivelly. Vertical bars represents the standard errors.*
+
+```{r rankabund, include=TRUE}
+# Attributing communities
+bd_y <- bd
+bd_y$com <- com(tree, bd_y, 2015, 1987)
+if(length(which(is.na(bd_y$com))) > 0){
+  bd_y <- bd_y[-which(is.na(bd_y$com)),] 
+}
+  
+# Building lists of treatment and repetition
+Coms <- list(T0 = subset(bd_y, treatment == 0), 
+             T1 = subset(bd_y, treatment == 1),
+             T2 = subset(bd_y, treatment == 2),
+             T3 = subset(bd_y, treatment == 3))
+Coms$T0 <- list(P1 = subset(Coms$T0, plot == 1),
+                P6 = subset(Coms$T0, plot == 6),
+                P11 = subset(Coms$T0, plot == 11))
+Coms$T1 <- list(P2 = subset(Coms$T1, plot == 2),
+                P7 = subset(Coms$T1, plot == 7),
+                P9 = subset(Coms$T1, plot == 9))
+Coms$T2 <- list(P3 = subset(Coms$T2, plot == 3),
+                P5 = subset(Coms$T2, plot == 5),
+                P10 = subset(Coms$T2, plot == 10))
+Coms$T3 <- list(P4 = subset(Coms$T3, plot == 4),
+                P8 = subset(Coms$T3, plot == 8),
+                P12 = subset(Coms$T3, plot == 12))
+
+# Data
+Coms <- lapply(Coms, function(Ti){
+  lapply(Ti, function(x) {
+    with(x, as.data.frame.matrix(table(vern, com)))
+  })
+})
+Coms <- lapply(Coms, function(Ti){
+  lapply(Ti, function(x) {
+   if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x[c('AR', 'S')])
+  })
+})
+Coms <- lapply(Coms, function(Ti){
+  lapply(Ti, function(x) {
+    data.frame(AR = log(sort(x$AR, decreasing = T)),
+               S = log(sort(x$S, decreasing = T)),
+               rank = 1:length(x$AR))
+  })
+})
+
+Coms.df <- lapply(Coms, function(x){do.call('rbind',x)})
+reps <- lapply(Coms, function(x){
+  unlist(lapply(x, function(y){
+    length(y[,1])
+  }))
+})
+Coms.df <- mapply(function(x, y){
+  x$plot <- as.factor(rep(1:3, y))
+  return(x)
+}, x = Coms.df, y = reps, SIMPLIFY = F)
+Coms.df <- lapply(Coms.df, function(x){
+  AR <- cbind(x[-2], 'AR')
+  names(AR) <- c('density', 'rank', 'plot', 'Com')
+  S <- cbind(x[-1], 'S')
+  names(S) <- names(AR)
+  return(rbind(AR, S))
+})
+Coms.df <- lapply(Coms.df, function(x){
+  x[which(x$density > 0),]
+})
+
+# plot
+p1 <- ggplot(Coms.df$T0, aes(x = rank, y = density, colour=Com)) +
+  geom_point(size=2, aes(shape=plot)) +
+  xlab('Rank') +
+  ylab('Log of density') +
+  scale_colour_hue(name="Community",
+                   breaks=c("AR",
+                            "S"),
+                   labels=c("Alive recruitments",
+                            "Survivors"),
+                   l=40) +
+  scale_shape(name="Plot",
+              labels=c("Plot 1",
+                       "Plot 6",
+                       "Plot 11")
+  ) +
+  theme_bw() +
+  theme(legend.justification = c(1,1),
+        legend.position = c(1,1))
+p2 <- ggplot(Coms.df$T1, aes(x = rank, y = density, colour=Com)) +
+  geom_point(size=2, aes(shape=plot)) +
+  xlab('Rank') +
+  ylab('Log of density') +
+  scale_colour_hue(name="Community",
+                   breaks=c("AR",
+                            "S"),
+                   labels=c("Alive recruitments",
+                            "Survivors"),
+                   l=40) +
+  scale_shape(name="Plot",
+              labels=c("Plot 2",
+                       "Plot 7",
+                       "Plot 9")
+  ) +
+  theme_bw() +
+  theme(legend.justification = c(1,1),
+        legend.position = c(1,1))
+p3 <- ggplot(Coms.df$T2, aes(x = rank, y = density, colour=Com)) +
+  geom_point(size=2, aes(shape=plot)) +
+  xlab('Rank') +
+  ylab('Log of density') +
+  scale_colour_hue(name="Community",
+                   breaks=c("AR",
+                            "S"),
+                   labels=c("Alive recruitments",
+                            "Survivors"),
+                   l=40) +
+  scale_shape(name="Plot",
+              labels=c("Plot 3",
+                       "Plot 5",
+                       "Plot 10")
+  ) +
+  theme_bw() +
+  theme(legend.justification = c(1,1),
+        legend.position = c(1,1))
+p4 <- ggplot(Coms.df$T3, aes(x = rank, y = density, colour=Com)) +
+  geom_point(size=2, aes(shape=plot)) +
+  xlab('Rank') +
+  ylab('Log of density') +
+  scale_colour_hue(name="Community",
+                   breaks=c("AR",
+                            "S"),
+                   labels=c("Alive recruitments",
+                            "Survivors"),
+                   l=40) +
+  scale_shape(name="Plot",
+              labels=c("Plot 4",
+                       "Plot 8",
+                       "Plot 12")
+  ) +
+  theme_bw() +
+  theme(legend.justification = c(1,1),
+        legend.position = c(1,1))
+cowplot::plot_grid(p1, p2, p3, p4, labels=c("T0", "T1", "T2", "T3"), ncol = 2, nrow = 2)
+```
+
+Figure 3: Rank abundance diagrams of alive recruitments and survivors in 2015.
 
 # Discussion
 
+- **limits: impact of vernacular names on evenness measurements**
+
 # *Acknowledgements*
 
-Ariane, Camille, Bruno for guiding. Pascal and all poeple who have contributed to Paracou data collect during all the past years. Tim for english useful comments.
+We would like to thanks Ariane Mirabelle, Camille Piponiot, and Bruno Hérault for their guiding in the study. The study won't have be possible without Pascal Petronelli and all poeple who have contributed to Paracou data collect during all the past years. Finally we would like to thank Timothy Chubb for english useful comments.
+
+# Supplementary materials
+
+```{r ratio}
+years <- c(1988:2015)
+ratio <- sapply(years, function(y){
+  
+  # Attributing communities
+  bd_y <- bd
+  bd_y$com <- com(tree, bd_y, y, 1987)
+  if(length(which(is.na(bd_y$com))) > 0){
+    bd_y <- bd_y[-which(is.na(bd_y$com)),] 
+  }
+  
+  # Building lists of treatment and repetition
+  Coms <- list(T0 = subset(bd_y, treatment == 0), 
+               T1 = subset(bd_y, treatment == 1),
+               T2 = subset(bd_y, treatment == 2),
+               T3 = subset(bd_y, treatment == 3))
+  Coms$T0 <- list(P1 = subset(Coms$T0, plot == 1),
+                  P6 = subset(Coms$T0, plot == 6),
+                  P11 = subset(Coms$T0, plot == 11))
+  Coms$T1 <- list(P2 = subset(Coms$T1, plot == 2),
+                 P7 = subset(Coms$T1, plot == 7),
+                 P9 = subset(Coms$T1, plot == 9))
+  Coms$T2 <- list(P3 = subset(Coms$T2, plot == 3),
+                 P5 = subset(Coms$T2, plot == 5),
+                 P10 = subset(Coms$T2, plot == 10))
+  Coms$T3 <- list(P4 = subset(Coms$T3, plot == 4),
+                 P8 = subset(Coms$T3, plot == 8),
+                 P12 = subset(Coms$T3, plot == 12))
+  
+  # Extracting searched beta-diversities
+  ## T0.DS.AR
+  T0.df <- lapply(Coms$T0, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T0.df <- lapply(T0.df, function(x) {x$S <- x$AS + x$DS ; return(x)})
+  T0.ratio <- lapply(T0.df, function(x) {length(which(x$AR > 0)) / length(which(x$S > 0))})
+  ## T1.DS.AR
+  T1.df <- lapply(Coms$T1, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T1.df <- lapply(T1.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T1.ratio <- lapply(T1.df, function(x) {length(which(x$AR > 0)) / length(which(x$S > 0))})
+  ## T2.DS.AR
+  T2.df <- lapply(Coms$T2, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T2.df <- lapply(T2.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T2.ratio <- lapply(T2.df, function(x) {length(which(x$AR > 0)) / length(which(x$S > 0))})
+  ## T3.DS.AR
+  T3.df <- lapply(Coms$T3, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T3.df <- lapply(T3.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T3.ratio <- lapply(T3.df, function(x) {length(which(x$AR > 0)) / length(which(x$S > 0))})
+  
+  return(list(
+    T0.ratio = T0.ratio,
+    T1.ratio = T1.ratio,
+    T2.ratio = T2.ratio,
+    T3.ratio = T3.ratio
+  ))
+}, simplify = F)
+
+names(ratio) <- years
+ratio <- lapply(ratio, `[`, names(ratio[[1]]))
+ratio <- apply(do.call(rbind, ratio), 2, as.list)
+ratio <- lapply(ratio, function(x){do.call('rbind', lapply(x, rbind))})
+ratio <- lapply(ratio, function(x){row.names(x) <- years ; return(x)})
+ratio <- lapply(ratio, data.frame)
+```
+
+```{r plot ratio, include=TRUE}
+library(ggplot2)
+
+# data
+ratio <- lapply(ratio, function(x){
+  data.frame(apply(x, 2, as.numeric), row.names = years)
+  })
+ratio.stats <- lapply(ratio, function(x){
+  data.frame(year = years,
+             mean = apply(x, 1, mean, na.rm = T),
+             se = apply(x, 1, function(x){sd(x, na.rm = T) / sqrt(length(x))}))
+})
+ratio.stats <- do.call('rbind', ratio.stats)
+ratio.stats$coms <- as.factor(rep(names(ratio), each = length(years)))
+
+# plot
+ggplot(ratio.stats, aes(x = year, y = mean, colour = coms)) + 
+  geom_errorbar(aes(ymin = mean - se, ymax = mean + se), 
+                colour = "black", width=.1) +
+  geom_line() +
+  geom_point(size=2, shape=21, fill="white") +
+  xlab('year') +
+  ylab('Ratio') +
+  scale_colour_hue(name="Ratio",
+                   breaks=c("T0.ratio",
+                            "T1.ratio",
+                            "T2.ratio",
+                            "T3.ratio"),
+                   labels=c("AR and S ratio in T0",
+                            "AR and S ratio in T1",
+                            "AR and S ratio in T2",
+                            "AR and S ratio in T3"),
+                   l=40) +
+  expand_limits(y=1) +
+  theme_bw() +
+  theme(legend.justification = c(1,0),
+        legend.position = c(1,0))
+```
+
+Supplementary materials 1: Ratio of number of species between alive recruits and survivors. 
+
+```{r diversity0}
+library(entropart)
+years <- c(1988:2015)
+q = 0 # Tsallis entropy order
+diversity <- sapply(years, function(y){
+  
+  # Attributing communities
+  bd_y <- bd
+  bd_y$com <- com(tree, bd_y, y, 1987)
+  if(length(which(is.na(bd_y$com))) > 0){
+    bd_y <- bd_y[-which(is.na(bd_y$com)),] 
+  }
+  
+  # Building lists of treatment and repetition
+  Coms <- list(T0 = subset(bd_y, treatment == 0), 
+               T1 = subset(bd_y, treatment == 1),
+               T2 = subset(bd_y, treatment == 2),
+               T3 = subset(bd_y, treatment == 3))
+  Coms$T0 <- list(P1 = subset(Coms$T0, plot == 1),
+                  P6 = subset(Coms$T0, plot == 6),
+                  P11 = subset(Coms$T0, plot == 11))
+  Coms$T1 <- list(P2 = subset(Coms$T1, plot == 2),
+                 P7 = subset(Coms$T1, plot == 7),
+                 P9 = subset(Coms$T1, plot == 9))
+  Coms$T2 <- list(P3 = subset(Coms$T2, plot == 3),
+                 P5 = subset(Coms$T2, plot == 5),
+                 P10 = subset(Coms$T2, plot == 10))
+  Coms$T3 <- list(P4 = subset(Coms$T3, plot == 4),
+                 P8 = subset(Coms$T3, plot == 8),
+                 P12 = subset(Coms$T3, plot == 12))
+  
+  # Extracting searched beta-diversities
+  ## T0.DS.AR
+  T0.df <- lapply(Coms$T0, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T0.df <- lapply(T0.df, function(x) {x$S <- x$AS + x$DS ; return(x)})
+  T0.mc <- lapply(T0.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T0.S.AR <- lapply(T0.mc, function(x){BetaDiversity(x, q = q)$Total})
+  ## T1.DS.AR
+  T1.df <- lapply(Coms$T1, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T1.df <- lapply(T1.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T1.mc <- lapply(T1.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T1.S.AR <- lapply(T1.mc, function(x){BetaDiversity(x, q = q)$Total})
+  ## T2.DS.AR
+  T2.df <- lapply(Coms$T2, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T2.df <- lapply(T2.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T2.mc <- lapply(T2.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T2.S.AR <- lapply(T2.mc, function(x){BetaDiversity(x, q = q)$Total})
+  ## T3.DS.AR
+  T3.df <- lapply(Coms$T3, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T3.df <- lapply(T3.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T3.mc <- lapply(T3.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T3.S.AR <- lapply(T3.mc, function(x){BetaDiversity(x, q = q)$Total})
+  
+  return(list(
+    T0.S.AR = T0.S.AR,
+    T1.S.AR = T1.S.AR,
+    T2.S.AR = T2.S.AR,
+    T3.S.AR = T3.S.AR
+  ))
+}, simplify = F)
+
+names(diversity) <- years
+diversity <- lapply(diversity, `[`, names(diversity[[1]]))
+diversity <- apply(do.call(rbind, diversity), 2, as.list)
+diversity <- lapply(diversity, function(x){do.call('rbind', lapply(x, rbind))})
+diversity <- lapply(diversity, function(x){row.names(x) <- years ; return(x)})
+diversity <- lapply(diversity, data.frame)
+```
+
+```{r plot0, include=TRUE}
+library(ggplot2)
+
+# data
+diversity <- lapply(diversity, function(x){
+  data.frame(apply(x, 2, as.numeric), row.names = years)
+  })
+diversity.stats <- lapply(diversity, function(x){
+  data.frame(year = years,
+             mean = apply(x, 1, mean, na.rm = T),
+             se = apply(x, 1, function(x){sd(x, na.rm = T) / sqrt(length(x))}))
+})
+diversity.stats <- do.call('rbind', diversity.stats)
+diversity.stats$coms <- as.factor(rep(names(diversity), each = length(years)))
+
+# plot
+ggplot(diversity.stats, aes(x = year, y = mean, colour = coms)) + 
+  geom_errorbar(aes(ymin = mean - se, ymax = mean + se), 
+                colour = "black", width=.1) +
+  geom_line() +
+  geom_point(size=2, shape=21, fill="white") +
+  xlab('year') +
+  ylab('Beta-diversity at order 0 (Richness index)') +
+  scale_colour_hue(name="Beta-diversity index",
+                   breaks=c("T0.S.AR",
+                            "T1.S.AR",
+                            "T2.S.AR",
+                            "T3.S.AR"),
+                   labels=c("AR and S in T0",
+                            "AR and S in T1",
+                            "AR and S in T2",
+                            "AR and S in T3"),
+                   l=40) +
+  expand_limits(y=1) +
+  theme_bw() +
+  theme(legend.justification = c(1,0),
+        legend.position = c(1,0))
+```
+
+Supplementary materials 2: Beta-diversity of order 0 (Richness index) evolution after logging. *Beta-diversity was measured with Richness beta-diversity from Tsallis entropy at order 0 between alive recruits (AR) and survivors (S) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines repsectivelly. Vertical bars represents the standard errors.*
+
+```{r diversity2}
+library(entropart)
+years <- c(1988:2015)
+q = 2 # Tsallis entropy order
+diversity <- sapply(years, function(y){
+  
+  # Attributing communities
+  bd_y <- bd
+  bd_y$com <- com(tree, bd_y, y, 1987)
+  if(length(which(is.na(bd_y$com))) > 0){
+    bd_y <- bd_y[-which(is.na(bd_y$com)),] 
+  }
+  
+  # Building lists of treatment and repetition
+  Coms <- list(T0 = subset(bd_y, treatment == 0), 
+               T1 = subset(bd_y, treatment == 1),
+               T2 = subset(bd_y, treatment == 2),
+               T3 = subset(bd_y, treatment == 3))
+  Coms$T0 <- list(P1 = subset(Coms$T0, plot == 1),
+                  P6 = subset(Coms$T0, plot == 6),
+                  P11 = subset(Coms$T0, plot == 11))
+  Coms$T1 <- list(P2 = subset(Coms$T1, plot == 2),
+                 P7 = subset(Coms$T1, plot == 7),
+                 P9 = subset(Coms$T1, plot == 9))
+  Coms$T2 <- list(P3 = subset(Coms$T2, plot == 3),
+                 P5 = subset(Coms$T2, plot == 5),
+                 P10 = subset(Coms$T2, plot == 10))
+  Coms$T3 <- list(P4 = subset(Coms$T3, plot == 4),
+                 P8 = subset(Coms$T3, plot == 8),
+                 P12 = subset(Coms$T3, plot == 12))
+  
+  # Extracting searched beta-diversities
+  ## T0.DS.AR
+  T0.df <- lapply(Coms$T0, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T0.df <- lapply(T0.df, function(x) {x$S <- x$AS + x$DS ; return(x)})
+  T0.mc <- lapply(T0.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T0.S.AR <- lapply(T0.mc, function(x){BetaDiversity(x, q = q)$Total})
+  ## T1.DS.AR
+  T1.df <- lapply(Coms$T1, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T1.df <- lapply(T1.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T1.mc <- lapply(T1.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T1.S.AR <- lapply(T1.mc, function(x){BetaDiversity(x, q = q)$Total})
+  ## T2.DS.AR
+  T2.df <- lapply(Coms$T2, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T2.df <- lapply(T2.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T2.mc <- lapply(T2.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T2.S.AR <- lapply(T2.mc, function(x){BetaDiversity(x, q = q)$Total})
+  ## T3.DS.AR
+  T3.df <- lapply(Coms$T3, function(x) {with(x, as.data.frame.matrix(table(vern, com)))})
+  T3.df <- lapply(T3.df, function(x) {
+    if('AS' %in% names(x)){
+      x$S <- x$AS + x$DS
+    } else {
+      x$S <- x$DS
+    }
+    return(x)
+  })
+  T3.mc <- lapply(T3.df, function(x) {MetaCommunity(x[c('S', 'AR')])})
+  T3.S.AR <- lapply(T3.mc, function(x){BetaDiversity(x, q = q)$Total})
+  
+  return(list(
+    T0.S.AR = T0.S.AR,
+    T1.S.AR = T1.S.AR,
+    T2.S.AR = T2.S.AR,
+    T3.S.AR = T3.S.AR
+  ))
+}, simplify = F)
+
+names(diversity) <- years
+diversity <- lapply(diversity, `[`, names(diversity[[1]]))
+diversity <- apply(do.call(rbind, diversity), 2, as.list)
+diversity <- lapply(diversity, function(x){do.call('rbind', lapply(x, rbind))})
+diversity <- lapply(diversity, function(x){row.names(x) <- years ; return(x)})
+diversity <- lapply(diversity, data.frame)
+```
+
+```{r plot2, include=TRUE}
+library(ggplot2)
+
+# data
+diversity <- lapply(diversity, function(x){
+  data.frame(apply(x, 2, as.numeric), row.names = years)
+  })
+diversity.stats <- lapply(diversity, function(x){
+  data.frame(year = years,
+             mean = apply(x, 1, mean, na.rm = T),
+             se = apply(x, 1, function(x){sd(x, na.rm = T) / sqrt(length(x))}))
+})
+diversity.stats <- do.call('rbind', diversity.stats)
+diversity.stats$coms <- as.factor(rep(names(diversity), each = length(years)))
+
+# plot
+ggplot(diversity.stats, aes(x = year, y = mean, colour = coms)) + 
+  geom_errorbar(aes(ymin = mean - se, ymax = mean + se), 
+                colour = "black", width=.1) +
+  geom_line() +
+  geom_point(size=2, shape=21, fill="white") +
+  xlab('year') +
+  ylab('Beta-diversity at order 2 (Simpson index)') +
+  scale_colour_hue(name="Beta-diversity index",
+                   breaks=c("T0.S.AR",
+                            "T1.S.AR",
+                            "T2.S.AR",
+                            "T3.S.AR"),
+                   labels=c("AR and S in T0",
+                            "AR and S in T1",
+                            "AR and S in T2",
+                            "AR and S in T3"),
+                   l=40) +
+  expand_limits(y=1) +
+  theme_bw() +
+  theme(legend.justification = c(1,0),
+        legend.position = c(1,0))
+```
+
+Supplementary materials 3: Beta-diversity of order 2 (Simpson index) evolution after logging. *Beta-diversity was measured with Simpson beta-diversity from Tsallis entropy at order 1 between alive recruits (AR) and survivors (S) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines repsectivelly. Vertical bars represents the standard errors.*
 
 # References
