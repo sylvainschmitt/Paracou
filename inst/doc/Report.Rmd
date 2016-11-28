@@ -1,8 +1,8 @@
 ---
-title: "Beta-diversity over 29 years in response to logging"
+title: "Increased cohorts beta-diversity in response to logging over 29 years"
 author: "Job Knoester & Sylvain Schmitt"
 date: "October 12, 2016"
-output: html_document
+output: pdf_document
 csl: mee.csl
 bibliography: refs.bib
 ---
@@ -17,13 +17,13 @@ Beta-diversity, Selective logging, Tropical evergreen forest
 
 Tropical logging accounts for one eighth of global timber production [@blaser11]. It represents a major threat to biodiversity [@gibson11]. Most tropical timber production originates from selective logging, the targeted harvesting of timber from commercial species in a single cutting cycle [@martin15]. Others sylvicultural practices, such as tree removal by poisoning, are sometimes also involved in selective logging.
 
-The short-term negative impact of selective logging on biodiversity is well known [@deAvila15; @carreno12; @gibson11; @martin15]. @deAvila15 found that additional sylvicultural practices and logging damages had stronger negative effect on diversity than logging itself. @carreno12 found no direct effect of medium intensity logging on species diversity but a community drift towards 'fast' [@reich14] acquisitive species. However, even the short term impact on biodiversity is unclear, as sometimes short term increases can occur at low sylvicultural intensities [@martin15]. Much less is known about the long term impact [@osazuwa15a; @osazuwa15b].
+The short-term negative impact of selective logging on biodiversity is well known [@deAvila15; @carreno12; @gibson11; @martin15]. @deAvila15 found that additional sylvicultural practices and logging damages had stronger negative effect on diversity than logging itself. @carreno12 found no direct effect of medium intensity logging on species diversity but a community drift towards 'fast' [@reich14] acquisitive species. However, even the short term impact on biodiversity is unclear, as sometimes short term increases in diversity can occur at low sylvicultural intensities [@martin15]. Much less is known about the long term impact [@osazuwa15a; @osazuwa15b].
 
-There are a number of ways diversity can be measured. The first ways is to count the number of species, known as species richness. This measurement highlight the richness but not the evenness of the abundnce distribution of species within communities. Second, the Shannon and Simpson indices takes more evenness into account, particularly the latter [@shannon49]. Finally, @tsallis88 combined these measurements with the help of entropy, i.e. the amount of uncertainty calculated from the frequency distribution of a community [@marcon14b]. @jost07 helped to clarify the concept of partitioning diversity $\gamma$ of the metacommunity into $\beta$ and $\alpha$ diversities. But the debate is ongoing, in spite of an atempt to resolve it by @chao12.
+There are a number of ways diversity can be measured. The first ways is to count the number of species, known as species richness. This measurement highlight the richness but not the evenness of the abundance distribution of species within communities. Second, the Shannon and Simpson indices takes more evenness into account, particularly the latter [@shannon49]. Finally, @tsallis88 combined these measurements with the help of entropy, i.e. the amount of uncertainty calculated from the frequency distribution of a community [@marcon14b]. @jost07 helped to clarify the concept of partitioning diversity $\gamma$, the total diversity of the metacommunity into $\beta$ and $\alpha$ diversities. But the debate is ongoing, in spite of an attempt to resolve it by @chao12.
 
-$\alpha$-diversity, the local diversity, has been highly documented in tropical forests [@valencia94]. Whereas $\beta$-diversity, how species composition changes with distances and among communities, has been less investigated [@condit02]. Still, $\beta$-diversity is a central concept about diversity organisation inside tropical forests. $\beta$-diversity can result from species adptations to climates or substrates [@paoli06], from limited dispersal [@qian09], or from other historical effects such as logging. Consequently $\beta$-diversity seems at least as important as $\alpha$-diversity for conservation and forest management.
+$\alpha$-diversity, the local diversity, has been highly documented in tropical forests [@valencia94]. Whereas $\beta$-diversity, how species composition changes with distances and among communities, has been less investigated [@condit02]. Still, $\beta$-diversity is a central concept about diversity organisation inside tropical forests. $\beta$-diversity can result from species adaptations to climates or substrates [@paoli06], from limited dispersal [@qian09], or from other historical effects such as logging. Consequently $\beta$-diversity seems at least as important as $\alpha$-diversity for conservation and forest management.
 
-In this paper we designed communities from individuals with similar history. And we used $\beta$-diversity indices between those communities to study and compare turnover of logged and unlogged forests along time.
+In this paper we designed communities from individual cohorts with similar history. And we used $\beta$-diversity indices between those communities to study and compare turnover of logged and unlogged forests along time.
 
 # Material and methods
 
@@ -34,19 +34,19 @@ The study was carried out in Paracou research station ($5^\circ 18'N$ and $52^\c
 In 1984, twelves plots of 6.25ha were established to study the effects of different intensities of selective logging. From 1986 to 1988, four logging treatments (T0, T1, T2 and T3) were applied to the plots according to randomized block design with three replicates [@baraloto12]:
 
 - T0 plots are the control plots were no selective logging or other sylvicultural practices were applied.
-- T1 plots underwent selective felling for timber of 50-60cm diameter at breast height (dbh) trees from 58 commercial species at an intensity of about 10 trees/ha. Selective logging in T1 plots resulted in 12-33% above ground biomass (AGB) loss.
-- T2 plots underwent selective felling for timber of about 30 trees/ha from same commercial species. Additionally, non-commercial species (NCS) over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T2 plots resulted in 33-56% AGB loss.
-- T3 plots underwent selective felling for timber from same commercial species plus logging of NCS of 40-50cm dbh for fuelwood. Additionally, NCS over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T3 plots resulted in 35-56% AGB loss.
+- T1 plots underwent selective felling for timber of 50-60cm diameter at breast height (dbh) trees from 58 commercial species at an intensity of about 10 trees/ha. Selective logging in T1 plots resulted in 12-33% above ground biomass (AGB) loss and $41.7 \pm 4.0 ~ ( mean \pm standard~deviation)$ species logged.
+- T2 plots underwent selective felling for timber of about 30 trees/ha from same commercial species. Additionally, non-commercial species (NCS) over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T2 plots resulted in 33-56% AGB loss and $41.7 \pm 6.7$ species logged.
+- T3 plots underwent selective felling for timber from same commercial species plus logging of NCS of 40-50cm dbh for fuelwood. Additionally, NCS over 50cm dbh and commercial species with major defects were eliminated by poison-girdling. Selective logging in T3 plots resulted in 35-56% AGB loss and $53.0 \pm 3.0$ species logged.
 
 ## Floral composition
 
-Before logging, each tree was identified by its vernacular name. Vernacular names can encompass different species and sometimes different genera. Since 1990, survivors and recruited trees have begun to be identified by species name. Consequently, trees removed in 1987 or trees that died before they could be categorized were not identified to the species level. But use of vernacular names has been shown to only induce a small discrepancy (Mirabelle, personnal communications). Our analysis will then use vernacular names. Censuses included 263 vernacular names.
+Before logging, each tree was identified by its vernacular name. Vernacular names can encompass different species and sometimes different genera. Since 1990, survivors and recruited trees have begun to be identified by species name. Consequently, trees removed in 1987 or trees that died before they could be categorized were not identified to the species level. But use of vernacular names has been shown to only induce a small discrepancy (Mirabel, personal communications). Our analysis will then use vernacular names. Censuses included 263 vernacular names.
 
 ## Analysis
 
 ### Time sampling
 
-Inventories of all plots were conducted annually from 1984 to 1994, every two years from 1995 to 2012, and annually from 2012 on trees above 10 cm gbh. For our analysis we generate recruitment figures for missing years by replicating that of the previous year (n-1) in order to simulate turnover measurements.
+Inventories of all plots were conducted annually from 1984 to 1994, every two years from 1995 to 2012, and annually from 2012 on trees above 10 cm gbh. For our analysis we generate recruit figures for missing years by replicating that of the previous year (n-1) in order to simulate turnover measurements.
 
 ### Community design
 
@@ -54,7 +54,7 @@ To study floral turnovers we divided the plots into communities with similar his
 
 We used this design to examine the evolution of floral turnover between the start date and alive recruits from a given census. The floral composition at start date comprised alive and dead survivors (AS and DS). Thus to study floral turnover between start date and alive recruits from a given census, we need to compare alive recruits (AR) to survivors (AS and DS).
 
-![Community design. *Tree plots were separated in four communities being Alive Recruitments (AR), Alive Survivors (AS), Dead Recruitments (DR), and Dead Survivors (DS).*](Community.png)
+![Community design. *Tree plots were separated in four communities being Alive Recruits (AR), Alive Survivors (AS), Dead Recruits (DR), and Dead Survivors (DS).*](Community.png)
 
 ### Diversity indices
 
@@ -69,16 +69,19 @@ All analyses were conducted using the R 3.3.0  software environment [@R] with en
 
 # Results
 
-**See $figure~1$**
+Number of stems in alive recruits (AR) community from logged plots went from $2073 \pm 307$ in 1988 to $4132 \pm 301$ in 2015, representing $132 \pm 9$ and $172 \pm 6$ vernacular names respectively. Whereas, number of stems in survivors (S) from logged plots was $1780 \pm 279$ representing $113 \pm 8$ vernacular names
 
-- **Pike of T0 in 1988 is an artefact, use ratio between AR and S in supplementary materials 1 as an argument**
-- **Effects of logging on evenness and not richness, see diversity indices at order 0 and 2 in Supplementary materials 2 and 3**
-- **$\beta _{T0} < \beta _{logged}$**
-- **$\beta _{T0}$ almost stable and > 1 but low**
-- **T3>T2>T1**
-- **$\beta _{logged}$ globally stable in time**
-- **$\beta _{T3}$ tendency to increase in time**
-- **Use of rank-abundance plots in 2015 to argue**
+$\beta$-diversity of Tsallis entropy of order 1 ($\beta _{treatment}$) between survivors (S) and alive recruits (AR) communities for all treatments is represented by $figure~1$. This result show that $\beta _{T0}$ (unlogged) is almost stable in time with a mean of $1.08 \pm 0.018$. Consequently, a slow turnover exists on unlogged plots. There is an effect of logging represented by $\beta _{logged}$. $\beta$-diversity from logged plots ($\beta _{logged}$) are 4.4 times higher than $\beta _{T0}$ (if we consider $\beta = 0$ as a null turnover) for the whole period. Moreover, $\beta$-diversity increases with treatment intensity ($\beta _{logged} < \beta _{logged} < \beta _{logged}$). As unlogged plots $\beta$-diversity, the $\beta$-diversities are stable in time for the two lowest intensity treatment plots (T1 and T2). For the most intense treatment (T3), $\beta$-diversity has a tendency to increase between 1990 and 2003.
+
+$\beta$-diversity rates remaining stable in time, log-abundance distributions should be similar from one year to the other. Consequently, we chose to look 2015 log-abundance figures. The log-abundance figures of the two community (AR and S) are relatively similar between all logged plots in 2015 (see $figure~2$). Survivors (S) distribution is always lower than the alive recruits' one. Log-abundance of logged plots are inverted between survivors (S) and alive recruits (AR) compare to unlogged plots. However, first-rank species abundance of survivors (S) in logged plots are bigger than the one of alive recruits (AR).
+
+We can observe a pike in 1988 for unlogged plots. It is due to a smaller headcount of tree and species in the alive recruits (AR) community compare to survivors (S). It is shown by the low ratio (0.1) between the number of species of AR and S in 1988 (see $supplementary~materials~1$). Contrary to unlogged plots, the selective logging liberated space allowing many tree species to be recruited. So, alive recruits (AR) headcount is sufficient for the logged plots and they did not present this problem. The ratio for unlogged plots $supplementary~materials~2$).
+
+We did not find clear differences in $\beta$-diversity between the four treatment for order 0 entropy (see $supplementary~materials~2$). Consequently, previous results concern mainly evenness (not present at entropy of order 0) and not richness. Still, $\beta$-diversity of order 0 is upper than 1 but mingled in time.
+
+Additionally, if we consider more evenness by using $\beta$-diversity of order 2, results remains the same than order 1 concerning the comparison between logged and unlogged plots. But the differences between the three intensities of logging diminish (see $supplementary~materials~3$).
+
+If we consider more evenness by using $\beta$-diversity at order 2, the results is still the same than order 1 for the comparison between logged and T0, but the differences between the three levels of log treatments disappear (see $supplementary~materials~3$).
 
 ```{r config, message=FALSE, warning=FALSE, include=FALSE}
 rm(list = ls()) ; invisible(gc())
@@ -253,7 +256,7 @@ ggplot(diversity.stats, aes(x = year, y = mean, colour = coms)) +
         legend.position = c(1,0))
 ```
 
-Figure 2: Beta-diversity of order 1 (Shannon index) evolution after logging. *Beta-diversity was measured with Shannon beta-diversity from Tsallis entropy at order 2 between alive recruits (AR) and survivors (S) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines repsectivelly. Vertical bars represents the standard errors.*
+Figure 2: Beta-diversity of order 1 (Shannon index) evolution after logging. *Beta-diversity was measured with Shannon beta-diversity from Tsallis entropy at order 2 between alive recruits (AR) and survivors (S) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines respectively. Vertical bars represents the standard errors.*
 
 ```{r rankabund, include=TRUE}
 # Attributing communities
@@ -328,16 +331,17 @@ Coms.df <- lapply(Coms.df, function(x){
 
 # plot
 p1 <- ggplot(Coms.df$T0, aes(x = rank, y = density, colour=Com)) +
-  geom_point(size=2, aes(shape=plot)) +
+  geom_point(size=2, fill = "white", aes(shape=plot)) +
   xlab('Rank') +
-  ylab('Log of density') +
+  ylab('Log of abundance') +
   scale_colour_hue(name="Community",
                    breaks=c("AR",
                             "S"),
-                   labels=c("Alive recruitments",
+                   labels=c("Alive recruits",
                             "Survivors"),
                    l=40) +
-  scale_shape(name="Plot",
+  scale_shape(solid=F,
+              name="Plot",
               labels=c("Plot 1",
                        "Plot 6",
                        "Plot 11")
@@ -346,16 +350,17 @@ p1 <- ggplot(Coms.df$T0, aes(x = rank, y = density, colour=Com)) +
   theme(legend.justification = c(1,1),
         legend.position = c(1,1))
 p2 <- ggplot(Coms.df$T1, aes(x = rank, y = density, colour=Com)) +
-  geom_point(size=2, aes(shape=plot)) +
+  geom_point(size=2, fill = "white", aes(shape=plot)) +
   xlab('Rank') +
-  ylab('Log of density') +
+  ylab('Log of abundance') +
   scale_colour_hue(name="Community",
                    breaks=c("AR",
                             "S"),
-                   labels=c("Alive recruitments",
+                   labels=c("Alive recruits",
                             "Survivors"),
                    l=40) +
-  scale_shape(name="Plot",
+  scale_shape(solid=F,
+              name="Plot",
               labels=c("Plot 2",
                        "Plot 7",
                        "Plot 9")
@@ -364,16 +369,17 @@ p2 <- ggplot(Coms.df$T1, aes(x = rank, y = density, colour=Com)) +
   theme(legend.justification = c(1,1),
         legend.position = c(1,1))
 p3 <- ggplot(Coms.df$T2, aes(x = rank, y = density, colour=Com)) +
-  geom_point(size=2, aes(shape=plot)) +
+  geom_point(size=2, fill = "white", aes(shape=plot)) +
   xlab('Rank') +
-  ylab('Log of density') +
+  ylab('Log of abundance') +
   scale_colour_hue(name="Community",
                    breaks=c("AR",
                             "S"),
-                   labels=c("Alive recruitments",
+                   labels=c("Alive recruits",
                             "Survivors"),
                    l=40) +
-  scale_shape(name="Plot",
+  scale_shape(solid=F,
+              name="Plot",
               labels=c("Plot 3",
                        "Plot 5",
                        "Plot 10")
@@ -382,16 +388,17 @@ p3 <- ggplot(Coms.df$T2, aes(x = rank, y = density, colour=Com)) +
   theme(legend.justification = c(1,1),
         legend.position = c(1,1))
 p4 <- ggplot(Coms.df$T3, aes(x = rank, y = density, colour=Com)) +
-  geom_point(size=2, aes(shape=plot)) +
+  geom_point(size=2, fill = "white", aes(shape=plot)) +
   xlab('Rank') +
-  ylab('Log of density') +
+  ylab('Log of abundance') +
   scale_colour_hue(name="Community",
                    breaks=c("AR",
                             "S"),
-                   labels=c("Alive recruitments",
+                   labels=c("Alive recruits",
                             "Survivors"),
                    l=40) +
-  scale_shape(name="Plot",
+  scale_shape(solid=F,
+              name="Plot",
               labels=c("Plot 4",
                        "Plot 8",
                        "Plot 12")
@@ -402,15 +409,23 @@ p4 <- ggplot(Coms.df$T3, aes(x = rank, y = density, colour=Com)) +
 cowplot::plot_grid(p1, p2, p3, p4, labels=c("T0", "T1", "T2", "T3"), ncol = 2, nrow = 2)
 ```
 
-Figure 3: Rank abundance diagrams of alive recruitments and survivors in 2015.
+Figure 3: Rank abundance diagrams of alive recruits and survivors in 2015.
 
 # Discussion
 
-- **limits: impact of vernacular names on evenness measurements**
+Tropical forests are primary ecosystems in term of biodiversity and carbon storage [@lewis04]. These two aspects are key ecosystem functions, which support ecosystem services, such as timber production and climate regulation. Selective logging is increasing in tropical forests, and its long term impact is still relatively unknown. We thus need to study the impact of selective logging on tropical forest dynamic. Particularly, we need to assess resilience of tropical forest ecosystems to selective logging in order to preserve tropical forest ecosystem function and services. Paracou study design offer a perfect playground to study selective logging impact on forest dynamic. We concluded from Paracou data that 29 years after selective logging the forest didn't recover and does not seems to go toward the original equilibrium.
+
+We found that logged forests had higher **turnover rates** that unlogged control, even 29 years after the log date. Moreover, turnover rates from logged plots remained stable in time with no trend of decrease. Our results are similar to findings of @osazuwa15b, at the exception that in our case turnover rates were not variable in time. It could be explain by the difference of environmental context, and we can also notice that our study contain much more time sampling. 
+
+Additionally, we found that the impact of selective logging on $\beta$-diversity mainly affect species distribution evenness instead of richness, similarly to @plumptre96. This result could explain why sometimes impact of selective logging on tropical forest biodiversity is minimized when only species richness is taken into account. Finally, our results also suggested a small trend of species turnover increase in high intensity logging forest, but this observation have to be investigated more deeply.
+
+One limit of our study is the use of vernacular names to evaluate tree species diversity. Vernacular names induce a small discrepancy increasing evenness (Mirabel, personal communication). But the bias may affect similarly both recruits and survivors cohorts. 
+
+Majority of previous studies have investigated selective logging on tropical forests focusing a single time point, at short term, and only with stems or species richness. Few studies investigated temporal dynamics of tree species distribution. First our study show that, species distribution evenness is needed to assess selective logging impact on tropical forest. And our results suggest that models assuming mid-term recovery to selective logging are inadequate for forest management and conservation policy. Furthermore, our results question the tropical forest resilience to selective logging, implying biodiversity loss and carbon storage dysfunction. As suggested by @osazuwa15b, we need to rethink the view of benign effect of selective logging.
 
 # *Acknowledgements*
 
-We would like to thanks Ariane Mirabelle, Camille Piponiot, and Bruno Hérault for their guiding in the study. The study won't have be possible without Pascal Petronelli and all poeple who have contributed to Paracou data collect during all the past years. Finally we would like to thank Timothy Chubb for english useful comments.
+We would like to thanks Ariane Mirabelle, Camille Piponiot, and Bruno Hérault for their guiding in the study. The study won't have be possible without Pascal Petronelli and all people who have contributed to Paracou data collect during all the past years. Finally we would like to thank Timothy Chubb for English useful comments.
 
 # Supplementary materials
 
@@ -500,7 +515,6 @@ ratio <- lapply(ratio, data.frame)
 
 ```{r plot ratio, include=TRUE}
 library(ggplot2)
-
 # data
 ratio <- lapply(ratio, function(x){
   data.frame(apply(x, 2, as.numeric), row.names = years)
@@ -537,7 +551,7 @@ ggplot(ratio.stats, aes(x = year, y = mean, colour = coms)) +
         legend.position = c(1,0))
 ```
 
-Supplementary materials 1: Ratio of number of species between alive recruits and survivors. 
+Supplementary materials 1: Ratio of number of species between alive recruits and survivors in time. 
 
 ```{r diversity0}
 library(entropart)
@@ -668,7 +682,7 @@ ggplot(diversity.stats, aes(x = year, y = mean, colour = coms)) +
         legend.position = c(1,0))
 ```
 
-Supplementary materials 2: Beta-diversity of order 0 (Richness index) evolution after logging. *Beta-diversity was measured with Richness beta-diversity from Tsallis entropy at order 0 between alive recruits (AR) and survivors (S) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines repsectivelly. Vertical bars represents the standard errors.*
+Supplementary materials 2: Beta-diversity of order 0 (Richness index) evolution after logging. *Beta-diversity was measured with Richness beta-diversity from Tsallis entropy at order 0 between alive recruits (AR) and survivors (S) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines respectively. Vertical bars represents the standard errors.*
 
 ```{r diversity2}
 library(entropart)
@@ -799,6 +813,6 @@ ggplot(diversity.stats, aes(x = year, y = mean, colour = coms)) +
         legend.position = c(1,0))
 ```
 
-Supplementary materials 3: Beta-diversity of order 2 (Simpson index) evolution after logging. *Beta-diversity was measured with Simpson beta-diversity from Tsallis entropy at order 1 between alive recruits (AR) and survivors (S) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines repsectivelly. Vertical bars represents the standard errors.*
+Supplementary materials 3: Beta-diversity of order 2 (Simpson index) evolution after logging. *Beta-diversity was measured with Simpson beta-diversity from Tsallis entropy at order 1 between alive recruits (AR) and survivors (S) in the four treatments: T0 the control, T1, T2, and T3 represented by red, green, light blue and dark blue lines respectively. Vertical bars represents the standard errors.*
 
 # References
